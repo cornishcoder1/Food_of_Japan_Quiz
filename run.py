@@ -1,3 +1,9 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+print("""
+_____   ___    ___   ___         ___   _____       ____   ____  ____   ____  ____   __ 
+|     | /   \  /   \ |   \       /   \ |     |     |    | /    ||    \ /    ||    \ |  |
+|   __||     ||     ||    \     |     ||   __|     |__  ||  o  ||  o  )  o  ||  _  ||  |
+|  |_  |  O  ||  O  ||  D  |    |  O  ||  |_       __|  ||     ||   _/|     ||  |  ||__|
+|   _] |     ||     ||     |    |     ||   _]     /  |  ||  _  ||  |  |  _  ||  |  | __ 
+|  |   |     ||     ||     |    |     ||  |       \  `  ||  |  ||  |  |  |  ||  |  ||  |
+|__|    \___/  \___/ |_____|     \___/ |__|        \____j|__|__||__|  |__|__||__|__||__|
+""")
