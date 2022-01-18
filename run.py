@@ -1,4 +1,7 @@
 def start_quiz():
+    """
+    Starting point of quiz, displays ASCII title text and sushi images. Gets user name and starts quiz.
+    """
     print("""
     _____   ___    ___   ___         ___   _____       ____   ____  ____   ____  ____   __ 
     |     | /   \  /   \ |   \       /   \ |     |     |    | /    ||    \ /    ||    \ |  |
