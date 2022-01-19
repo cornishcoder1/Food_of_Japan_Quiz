@@ -74,7 +74,15 @@ def start_quiz():
 #==================================================================================            
 
 def run_quiz():
-        print("quiz is running")
+    attempts = []
+    correct_attempts = 0
+    question_num = 1
 
+    for e in range(len(questions)):
+        print(([key for key in questions.keys()][0]))
+
+
+#=======================================================
 start_quiz()
 run_quiz()
+
