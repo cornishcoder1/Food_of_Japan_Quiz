@@ -30,5 +30,17 @@ def start_quiz():
         print("Take the quiz to test your knowledge of Japanese cuisine.\n")
         print("There are 10 multiple choice questions, good luck!\n")
 
+    start_quiz = True
+
+    while start_quiz:
+        commence_quiz = input("Are you ready to begin? y/n ")
+
+        if commence_quiz.lower() == "y":
+            print("Lets go")
+            break
+        elif commence_quiz.lower() == "n":
+            print("Oh no")
+        else:
+            print("That is not a valid option")
 
 start_quiz()
