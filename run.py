@@ -26,7 +26,7 @@ def start_quiz():
         name = input("Please enter you name:\n")
         break
     else:
-        print(f"Welcome to Food of Japan {name}!\n")
+        print(f"\nWelcome to Food of Japan {name}!\n")
         print("Take the quiz to test your knowledge of Japanese cuisine.\n")
         print("There are 10 multiple choice questions, good luck!\n")
 
