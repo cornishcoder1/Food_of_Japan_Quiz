@@ -1,6 +1,31 @@
+questions = {
+        "This dish is a speciality in the region of Gunma, typically consisting of pork tenderloin which is breaded and deep fried.": "C",
+        "A type of sushi, consisting of pressed rice usually topped with fish.": "B",
+        "These boiled dumplings are usually served in a very light broth, filled with ground meat and vegetables.": "B",
+        "Katsuobushi shavings (or bonito flakes) are derived from which fish?": "A",
+        "What is Japanese Horseradish also known as?": "C",
+        "Found all over Japan in street food markets and sushi restaurants, this fried rolled omelette is typically seasoned with salt and dashi.": "A",
+        "Which of the Japanese islands is famous for it’s Tarabagani (King Crab)?": "B",
+        "Which Japanese fruit is said to be one of the most expensive in the world?": "C",
+        "Which variety of beef is identified by it’s fatty, well-marbled texture?": "C",
+        "What fish-shaped pancake is traditionally filled with sweetened adzuki beans?": "B",
+}
+
+
+
+
+
+
+
+
+
+
+
+
 def start_quiz():
     """
-    Starting point of quiz, displays ASCII title text and sushi images. Gets user name and starts quiz.
+    Starting point of quiz, displays ASCII title text and sushi images. Gets user name, shows instructions and asks user if 
+    they are ready to begin. 
     """
     print("""
     _____   ___    ___   ___         ___   _____       ____   ____  ____   ____  ____   __ 
@@ -43,4 +68,10 @@ def start_quiz():
         else:
             print("That is not a valid option")
 
+#==================================================================================            
+
+def run_quiz():
+        print("quiz is running")
+
 start_quiz()
+run_quiz()
