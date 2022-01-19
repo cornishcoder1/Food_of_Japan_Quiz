@@ -11,16 +11,19 @@ questions = {
         "What fish-shaped pancake is traditionally filled with sweetened adzuki beans?": "B",
 }
 
+all_answer_options = (
+        ("A. Menchikatsu", "B. Katsudon", "C. Tonkatsu"),
+        ("A. Sashimi", "B. Nigiri", "C. Maki"),
+        ("A. Yaki gyoza", "B. Sui gyoza", "C. Age gyoza"),
+        ("A. Tuna", "B. Salmon", "C. Mackerel"),
+        ("A. Onigiri", "B. Karaage", "C. Wasabi"),
+        ("A. Tamagoyaki", "B. Datemaki", "C. Okonomiyaki"),
+        ("A. Tashiro", "B. Hokkaido", "C. Sado"),
+        ("A. Akebi", "B. Momo peach", "C. Yubari melon"),
+        ("A. Yonezawa", "B. Mishima", "C. Kobe"),
+        ("A. Zabuton Dora", "B. Taiyaki", "C. Mitarashi Dango"))
 
-
-
-
-
-
-
-
-
-
+#=====================================================================
 
 def start_quiz():
     """
