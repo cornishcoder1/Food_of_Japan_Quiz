@@ -19,15 +19,16 @@ def start_quiz():
 
     \n""")
 
-    global name 
+    #global name 
     name = input("Please enter you name:\n")
     while name == "" or name == " ":
         print("Please enter your name to begin the quiz")
         name = input("Please enter you name:\n")
-
-
-
-
+        break
+    else:
+        print(f"Welcome to Food of Japan {name}!\n")
+        print("Take the quiz to test your knowledge of Japanese cuisine.\n")
+        print("There are 10 multiple choice questions, good luck!\n")
 
 
 start_quiz()
