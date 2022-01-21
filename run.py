@@ -76,7 +76,7 @@ def start_quiz():
  
     \n""")
 
-    #global name 
+    global name 
     name = input("Please enter you name:\n")
     while name == "" or name == " ":
         print("Please enter your name to begin the quiz")
@@ -124,7 +124,7 @@ def run_quiz(quiz_data):
 #=======================================================
 
 def final_score(score):
-    print(f"Congratulations! Your final score is {score} out of 10")
+    print(f"Congratulations {name}! Your final score is {score} out of 10")
 
 start_quiz()
 run_quiz(quiz_data)
