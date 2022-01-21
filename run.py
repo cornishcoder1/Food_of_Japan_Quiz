@@ -1,27 +1,20 @@
-questions = {
-        "This dish is a speciality in the region of Gunma, typically consisting of pork tenderloin which is breaded and deep fried.": "C",
-        "A type of sushi, consisting of pressed rice usually topped with fish.": "B",
-        "These boiled dumplings are usually served in a very light broth, filled with ground meat and vegetables.": "B",
-        "Katsuobushi shavings (or bonito flakes) are derived from which fish?": "A",
-        "What is Japanese Horseradish also known as?": "C",
-        "Found all over Japan in street food markets and sushi restaurants, this fried rolled omelette is typically seasoned with salt and dashi.": "A",
-        "Which of the Japanese islands is famous for it’s Tarabagani (King Crab)?": "B",
-        "Which Japanese fruit is said to be one of the most expensive in the world?": "C",
-        "Which variety of beef is identified by it’s fatty, well-marbled texture?": "C",
-        "What fish-shaped pancake is traditionally filled with sweetened adzuki beans?": "B",
-}
-
-all_answer_options = (
-        ("A. Menchikatsu", "B. Katsudon", "C. Tonkatsu"),
-        ("A. Sashimi", "B. Nigiri", "C. Maki"),
-        ("A. Yaki gyoza", "B. Sui gyoza", "C. Age gyoza"),
-        ("A. Tuna", "B. Salmon", "C. Mackerel"),
-        ("A. Onigiri", "B. Karaage", "C. Wasabi"),
-        ("A. Tamagoyaki", "B. Datemaki", "C. Okonomiyaki"),
-        ("A. Tashiro", "B. Hokkaido", "C. Sado"),
-        ("A. Akebi", "B. Momo peach", "C. Yubari melon"),
-        ("A. Yonezawa", "B. Mishima", "C. Kobe"),
-        ("A. Zabuton Dora", "B. Taiyaki", "C. Mitarashi Dango"))
+quiz_data = [
+    {"question": "This dish is a speciality in the region of Gunma, typically consisting of pork tenderloin which is breaded and deep fried.",
+     "answers": {"A": "Menchikatsu",
+                 "B": "Katsudon",
+                 "C": "Tonkatsu"},
+     "correct_answer": "C"},
+    {"question": "A type of sushi, consisting of pressed rice usually topped with fish.",
+     "answers": {"A": "Sashimi",
+                 "B": "Nigiri",
+                 "C": "Maki"},
+     "correct_answer": "B"},
+    {"question": "What is your name?",
+     "answers": {"A": "Tom",
+                 "B": "Harry",
+                 "C": "Leah"},
+     "correct_answer": "C"},
+]
 
 #=====================================================================
 
@@ -73,16 +66,26 @@ def start_quiz():
 
 #==================================================================================            
 
-def run_quiz():
-    attempts = []
-    correct_attempts = 0
-    question_num = 1
+def run_quiz(quiz_data):
+    for entry in quiz_data:
+        print(f"Question:{entry['question']}")
+        for key, value in entry['answers'].items():
+            print(f"{key}: {value}")
 
-    for e in range(len(questions)):
-        print(([key for key in questions.keys()][0]))
+        user_answer = input("What is your answer? ")
+        user_answer = user_answer.upper()
+        if user_answer == entry['correct_answer']:
+            print("Correct")
+        else:
+            print("Better luck next time!")
+
+
 
 
 #=======================================================
+
 start_quiz()
-run_quiz()
+run_quiz(quiz_data)
+
+
 
