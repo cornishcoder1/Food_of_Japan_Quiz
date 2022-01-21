@@ -50,7 +50,7 @@ quiz_data = [
                  "B": "Taiyaki",
                  "C": "Mitarashi Dango"},
      "correct_answer": "B"}
-]     
+] 
 
 #=====================================================================
 
@@ -103,6 +103,7 @@ def start_quiz():
 #==================================================================================            
 
 def run_quiz(quiz_data):
+    score = 0
     for entry in quiz_data:
         print(f"Question:{entry['question']}")
         for key, value in entry['answers'].items():
@@ -112,16 +113,22 @@ def run_quiz(quiz_data):
         user_answer = user_answer.upper()
         if user_answer == entry['correct_answer']:
             print("Correct")
+            score += 1
+        
         else:
             print("Oops sorry! Better luck next time!")
+            score += 0
 
-
-
+    final_score(score)
 
 #=======================================================
 
+def final_score(score):
+    print(f"Congratulations! Your final score is {score} out of 10")
+
 start_quiz()
 run_quiz(quiz_data)
+
 
 
 
