@@ -103,6 +103,9 @@ def start_quiz():
 #==================================================================================            
 
 def run_quiz(quiz_data):
+    """
+    Iterates through quiz questions and potential answers, gets user input and implements score by one or zero, depending on user input. 
+    """
     score = 0
     for entry in quiz_data:
         print(f"Question:{entry['question']}")
@@ -124,6 +127,9 @@ def run_quiz(quiz_data):
 #=======================================================
 
 def final_score(score):
+    """
+    Displays final score at end of quiz
+    """
     print(f"Congratulations {name}! Your final score is {score} out of 10")
 
 start_quiz()
