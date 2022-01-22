@@ -119,7 +119,7 @@ def run_quiz(quiz_data):
             score += 1
         
         else:
-            print("Oops sorry! Better luck next time monkeybrains!")
+            print("Oops sorry! Better luck next time")
             score += 0
 
     final_score(score)
