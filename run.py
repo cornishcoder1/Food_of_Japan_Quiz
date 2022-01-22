@@ -90,7 +90,7 @@ def start_quiz():
     start_quiz = True
 
     while start_quiz:
-        commence_quiz = input("Are you ready to begin? y/n ")
+        commence_quiz = input("Are you ready to begin? y/n\n")
 
         if commence_quiz.lower() == "y":
             print("Lets go")
@@ -112,7 +112,7 @@ def run_quiz(quiz_data):
         for key, value in entry['answers'].items():
             print(f"{key}: {value}")
 
-        user_answer = input("What is your answer? ")
+        user_answer = input("What is your answer?\n")
         user_answer = user_answer.upper()
         if user_answer == entry['correct_answer']:
             print("Correct")
