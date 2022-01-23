@@ -109,7 +109,7 @@ def run_quiz(quiz_data):
     """
     score = 0
     for entry in quiz_data:
-        print(f"Question:{entry['question']}")
+        print(f"{entry['question']}")
         for key, value in entry['answers'].items():
             print(f"{key}: {value}")
 
