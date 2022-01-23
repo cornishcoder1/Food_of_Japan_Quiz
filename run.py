@@ -1,5 +1,5 @@
 quiz_data = [
-    {"question": "This dish is a speciality in the region of Gunma, typically consisting of pork tenderloin which is breaded and deep fried.",
+    {"question": "This dish is a speciality in the region of Gunma, typically consisting of pork\n tenderloin which is breaded and deep fried.",
      "answers": {"A": "Menchikatsu",
                  "B": "Katsudon",
                  "C": "Tonkatsu"},
