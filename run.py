@@ -57,7 +57,8 @@ quiz_data = [
 
 def count_keys(quiz_data):
     """
-    Counts number of questions in dictionary for the f string on line ENTER LINE NUMBER
+    Counts number of questions in dictionary for the f string on line ENTER LINE NUMBER (this allows more questions 
+    to be added to dictionary and the intro text to automatically update with number of questions).
     """
     count = 0
     for i in enumerate(quiz_data):
@@ -127,8 +128,7 @@ def run_quiz(quiz_data):
     """
     score = 0
     for entry in quiz_data:
-        print(f"{entry['question']}")
-        
+        print(f"{entry['question']}")      
         for key, value in entry['answers'].items():
             print(f" \t {key}: {value}")
 
@@ -139,9 +139,8 @@ def run_quiz(quiz_data):
             print("Correct\n")
             score += 1
         else:
-            print("Oops sorry! Better luck next time\n") 
+            print("Oops sorry! Better luck next time\n")
             score += 0
-       
 
     final_score(score)
 
@@ -153,8 +152,27 @@ def final_score(score):
     """
     print(f"Congratulations {name}! Your final score is {score} out of 10")
 
+#=======================================================
+
+def play_again():
+    """
+    Asks user if they want to play again. Returns to start of quiz, or ends quiz depending on user input
+    """
+    response = input("Do you want to play again? y/n\n")
+    response = response.upper()
+
+    if response == "Y":
+        return True
+    else:
+        return False
+
+
 start_quiz()
 run_quiz(quiz_data)
 
-
+while play_again():
+    start_quiz()
+    run_quiz(quiz_data)
+else:
+    print("end of quiz")
 
