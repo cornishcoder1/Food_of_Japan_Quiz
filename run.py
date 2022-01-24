@@ -129,16 +129,16 @@ def run_quiz(quiz_data):
         print(f"{entry['question']}")
         
         for key, value in entry['answers'].items():
-            print(f"\t{key}: {value}")
+            print(f" \t {key}: {value}")
 
         user_answer = input("What is your answer?\n")
         user_answer = user_answer.upper()
         if user_answer == entry['correct_answer']:
-            print("Correct")
+            print("Correct\n")
             score += 1
         
         else:
-            print("Oops sorry! Better luck next time")
+            print("Oops sorry! Better luck next time\n")
             score += 0
 
     final_score(score)
