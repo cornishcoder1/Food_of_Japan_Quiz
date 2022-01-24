@@ -54,6 +54,22 @@ quiz_data = [
 
 #=====================================================================
 
+
+def count_keys(quiz_data):
+    """
+    Counts number of questions in dictionary for the f string on line ENTER LINE NUMBER
+    """
+    count = 0
+    for i in enumerate(quiz_data):
+        count += 1
+    return count
+
+
+num_of_questions = (count_keys(quiz_data))
+
+
+#=====================================================================
+
 def start_quiz():
     """
     Starting point of quiz, displays ASCII title text and sushi images. Gets user name, shows instructions and asks user if 
@@ -79,6 +95,7 @@ def start_quiz():
 
     global name 
     name = input("Please enter you name:\n")
+    
     while name == "" or name == " ":
         print("Please enter your name to begin the quiz")
         name = input("Please enter you name:\n")
@@ -86,7 +103,7 @@ def start_quiz():
     else:
         print(f"\nWelcome to Food of Japan {name}!\n")
         print("Take the quiz to test your knowledge of Japanese cuisine.\n")
-        print("There are 10 multiple choice questions, good luck!\n")
+        print(f"\nThere are {num_of_questions} multiple choice questions, good luck!\n")
 
     start_quiz = True
 
@@ -110,6 +127,7 @@ def run_quiz(quiz_data):
     score = 0
     for entry in quiz_data:
         print(f"{entry['question']}")
+        
         for key, value in entry['answers'].items():
             print(f"{key}: {value}")
 
@@ -135,7 +153,6 @@ def final_score(score):
 
 start_quiz()
 run_quiz(quiz_data)
-
 
 
 
