@@ -103,7 +103,8 @@ def start_quiz():
     else:
         print(f"Welcome to Food of Japan {name}!\n")
         print("Take the quiz to test your knowledge of Japanese cuisine.\n")
-        print(f"There are {num_of_questions} multiple choice questions, good luck!\n")
+        print(f"There are {num_of_questions} multiple choice questions, select your answer by typing 'a', 'b' or 'c'.\n")
+        print("Good luck!\n")
 
     start_quiz = True
 
@@ -114,7 +115,7 @@ def start_quiz():
             print("Lets go\n")
             break
         elif commence_quiz.lower() == "n":
-            print("Oh no\n")
+            print("Type 'y' when you are ready to begin\n")
         else:
             print("That is not a valid option\n")
 
@@ -133,13 +134,14 @@ def run_quiz(quiz_data):
 
         user_answer = input("What is your answer?\n")
         user_answer = user_answer.upper()
+
         if user_answer == entry['correct_answer']:
             print("Correct\n")
             score += 1
-        
         else:
-            print("Oops sorry! Better luck next time\n")
+            print("Oops sorry! Better luck next time\n") 
             score += 0
+       
 
     final_score(score)
 
