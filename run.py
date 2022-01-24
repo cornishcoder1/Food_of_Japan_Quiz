@@ -129,17 +129,19 @@ def run_quiz(quiz_data):
     """
     score = 0
     for entry in quiz_data:
-        print(f"{entry['question']}")  
-        for key, value in entry['answers'].items():
-            print(f" \t {key}: {value}")
+        user_answer = ''
+        while user_answer not in ['A', 'B', 'C']:
+            print(f"{entry['question']}")
+            for key, value in entry['answers'].items():
+                print(f" \t {key}: {value}")
+        
+            user_answer = input("What is your answer?\n")
+            user_answer = user_answer.upper()
 
-        user_answer = input("What is your answer?\n")
-        user_answer = user_answer.upper()
+            if user_answer not in entry['answers']:
+                print("Only a, b or c will be accepted as answers\n")
 
-        if user_answer not in entry['answers']:
-            print("Only a, b or c will be accepted as answers\n")
-	    #add in code to clear screen and repeat question
-        elif user_answer == entry['correct_answer']:
+        if user_answer == entry['correct_answer']:
             print("Correct\n")
             score += 1
         else:
@@ -147,6 +149,9 @@ def run_quiz(quiz_data):
             score += 0
 
     final_score(score)
+
+
+
 
 #=======================================================
 
