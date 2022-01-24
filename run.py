@@ -97,26 +97,26 @@ def start_quiz():
     name = input("Please enter you name:\n")
     
     while name == "" or name == " ":
-        print("Please enter your name to begin the quiz")
-        name = input("Please enter you name:\n")
+        print("\nPlease enter your name to begin the quiz\n")
+        name = input("\nPlease enter you name:\n")
         break
     else:
         print(f"\nWelcome to Food of Japan {name}!\n")
-        print("Take the quiz to test your knowledge of Japanese cuisine.\n")
+        print("\nTake the quiz to test your knowledge of Japanese cuisine.\n")
         print(f"\nThere are {num_of_questions} multiple choice questions, good luck!\n")
 
     start_quiz = True
 
     while start_quiz:
-        commence_quiz = input("Are you ready to begin? y/n\n")
+        commence_quiz = input("\nAre you ready to begin? y/n\n")
 
         if commence_quiz.lower() == "y":
-            print("Lets go")
+            print("\nLets go\n")
             break
         elif commence_quiz.lower() == "n":
-            print("Oh no")
+            print("\nOh no\n")
         else:
-            print("That is not a valid option")
+            print("\nThat is not a valid option\n")
 
 #==================================================================================            
 
