@@ -73,8 +73,8 @@ num_of_questions = (count_keys(quiz_data))
 
 def start_quiz():
     """
-    Starting point of quiz, displays ASCII title text and sushi images. Gets user name, shows instructions and asks user if 
-    they are ready to begin. 
+    Starting point of quiz, displays ASCII title text and sushi images. Gets user name, shows instructions
+    and asks user if they are ready to begin.
     """
     print("""
  _____  ___   ___  ___         ___  _____       ____  ____ ____   ____ ____  __ 
@@ -91,12 +91,12 @@ def start_quiz():
     ,'  ________  ',      |______|;;|______|      ',,_;__;__;__;,'''/\\
     ;,;'        ';,'        |    |;;|    |         |            |
      '.________.'            '.__|;;|__.'           '.________.'
- 
+
     \n""")
 
-    global name 
+    global name
     name = input("Please enter you name:\n")
-    
+
     while name == "" or name == " ":
         print("Please enter your name to begin the quiz\n")
         name = input("Please enter you name:\n")
@@ -107,9 +107,9 @@ def start_quiz():
         print("Select your answer by typing 'a', 'b' or 'c'.\n")
         print("Good luck!\n")
 
-    start_quiz = True
+    begin_quiz = True
 
-    while start_quiz:
+    while begin_quiz:
         commence_quiz = input("Are you ready to begin? y/n\n")
 
         if commence_quiz.lower() == "y":
@@ -121,6 +121,7 @@ def start_quiz():
             print("That is not a valid option\n")
 
 #==================================================================================            
+
 
 def run_quiz(quiz_data):
     """
@@ -146,6 +147,7 @@ def run_quiz(quiz_data):
 
 #=======================================================
 
+
 def final_score(score):
     """
     Displays final score at end of quiz
@@ -153,6 +155,7 @@ def final_score(score):
     print(f"Congratulations {name}! Your final score is {score} out of 10")
 
 #=======================================================
+
 
 def play_again():
     """
@@ -175,4 +178,3 @@ while play_again():
     run_quiz(quiz_data)
 else:
     print("end of quiz")
-
