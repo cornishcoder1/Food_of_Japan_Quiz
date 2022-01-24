@@ -100,11 +100,11 @@ def start_quiz():
     while name == "" or name == " ":
         print("Please enter your name to begin the quiz\n")
         name = input("Please enter you name:\n")
-        break
     else:
         print(f"Welcome to Food of Japan {name}!\n")
         print("Take the quiz to test your knowledge of Japanese cuisine.\n")
-        print(f"There are {num_of_questions} multiple choice questions, select your answer by typing 'a', 'b' or 'c'.\n")
+        print(f"There are {num_of_questions} multiple choice questions.\n")
+        print("Select your answer by typing 'a', 'b' or 'c'.\n")
         print("Good luck!\n")
 
     start_quiz = True
