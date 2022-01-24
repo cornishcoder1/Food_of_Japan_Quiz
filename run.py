@@ -128,7 +128,7 @@ def run_quiz(quiz_data):
     for entry in quiz_data:
         print(f"{entry['question']}")
         
-        for key, value in entry['answers'].items():
+        for key, value in entry['\tanswers'].items():
             print(f"{key}: {value}")
 
         user_answer = input("What is your answer?\n")
