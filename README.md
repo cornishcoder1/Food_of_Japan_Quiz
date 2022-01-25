@@ -1,31 +1,191 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome cornishcoder1,
+# Food of Japan Quiz
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+<p>Introduction here</p>
 
-## Reminders
+<a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open deployed site">Link to deployed site</a>
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+<img src="assets/images/am_I_responsive_screenshot.png">Am I responsive? image here
 
-## Creating the Heroku app
+------
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+# Table of Contents:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+1. [Flowchart](#flowchart)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+2. [Wireframes](#wireframes)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+3. [User Experience/Stories](#user-experience)
 
-Connect your GitHub repository and deploy as normal.
+4. [How To Play](#how-to-play)
 
-## Constraints
+5. [Features](#features)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+6. [Data Model](#data-model)
 
------
-Happy coding!
+7. [Other Resources Used](#other-resources-used)
+
+8. [Testing](#testing)
+
+9. [Bugs](#bugs) 
+
+10. [Deployment](#deployment)
+
+11. [Credits](#credits)
+   
+   
+------
+
+# Flowchart
+Document the work undertaken to plan this project’s logic through flow charts or diagrams. FLOWCHART HERE.  
+
+# Wireframes
+
+Wireframe for terminal onload view:
+
+
+<div align="center">
+
+
+![Wireframe for terminal onload view](./assets/wireframes/wireframe_desktop.png)
+
+</div>
+
+------
+
+# User Experience 
+
+------
+
+# How to Play
+
+------
+
+# Features 
+
+<div align="center">
+
+**Heading and Introduction**
+
+The heading and introductory text clearly explain to the user what the page is, and what service is being quoted for. 
+
+![Screenshot of heading and introductory text](./assets/screenshots/header_and_introduction.png)
+
+
+</div>
+
+<div align="center">
+
+**Quote Form**
+
+This section allows the user to select the type of item they require a price for, and what areas the item is to be collected from and delivered to. If 'other' is selected in the 'type of item' selector then the user is advised to contact The Green Lorry for a bespoke quote. If the item is to be collected from an area outside of Bristol, then a distance surcharge is applied to the quote. No additional charges are applied to any of the specified 'Delivering to' locations, as they are all areas of Bristol (price variables are only applied to type of item and location of collection). Users can generate a new quote by changing the options and re-clicking the 'Generate Quote' button to refresh the quote output.  
+
+![Screenshot of quote form](./assets/screenshots/quote_form.png)
+
+
+</div>
+
+<div align="center">
+
+**Quote Output Section**
+
+This section returns the generated quote information based on what options the user has selected. It clearly displays a thank you message, distance surcharge (if applicable), item collection charge and most importantly the quote total. 
+
+![Screenshot of quote output section](./assets/screenshots/quote_output_section.png)
+
+
+</div>
+
+<div align="center">
+
+**Footer**
+
+The footer contains contact information, should the user need further assistance and an animated lorry which moves across the page when the 'Generate Quote' button is clicked.  
+
+![Screenshot of Footer](./assets/screenshots/footer.png)
+
+
+</div>
+
+## Features left to implement
+
+This quote generator would work best as an element incorporated into a wider website for the fictional business. The generation of the quote could be the first step in a complete system which would also incorporate booking and payment. For the quote generator itself, there is alot of potential for it to be more intuitive. I would like to widen the range of items that are availble to select, or perhaps use a 'predictive' element where the user begins typing the item and the field autofills with potential options. I would also like to use a postcode API to make collection and delivery options more accurate, as the area options given at the moment are quite broad.  
+
+------
+
+# Data Model
+
+- Dictionary?
+
+
+# Other resources used
+
+<a href="http://ami.responsivedesign.is/#"> - Am I Responsive</a>
+
+<a href="https://balsamiq.com"> - Balsamiq</a>
+
+------
+
+# Testing
+Pep8, given invalid inputs, tested in local/deployed terminals. 
+
+------
+
+# Bugs
+
+## Fixed
+-
+
+## Unfixed
+
+
+
+------
+
+# Deployment 
+
+Deployment was done at the start of the project to allow device testing throughout the development process. 
+
+My <a href="https://cornishcoder1.github.io/The-Green-Lorry/" aria-label="Link to open deployed site">project</a> was deployed via GitHub Pages as follows:
+
+1. Go to https://github.com and login
+2. Navigate to the required repository (The-Green-Lorry)
+3. Click on the "Settings" button
+4. Click on "GitHub Pages"
+5. Under "Source", click the dropdown for "Branch" select "master" and then "Save"
+6. A message will then appear stating that the website is published at the deployed address, this may take a few seconds.  
+
+------
+
+# Credits 
+
+## Content
+
+I used the following websites for research: 
+
+- <a href="https://www.bristolactivecity.org.uk/np-area-map/">Bristol Active City Area Map</a> 
+- <a href="https://shiply.com">Shiply.com</a>
+
+<br>
+
+## Media 
+
+1. Nightstand hero image by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> on <a href="https://www.flaticon.com/premium-icon/night-stand_997309?term=furniture&related_id=997360&origin=search"> Flaticon</a> 
+
+2. Delivery van image by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener"> Freepik</a> on <a href="https://www.flaticon.com/premium-icon/delivery-van_3124236"> Flaticon</a>
+
+3. Articulated Lorry Favicon by <a href="https://twitter.com/johnsorrentino">John Sorrentino</a> on <a href="https://favicon.io/emoji-favicons/articulated-lorry/"> Favicon.io</a>
+
+<br>
+
+## Acknowledgements 
+
+- Dave_Horrocks_5P for his invaluable hours of assistance in helping me understand arrays (a previous PP2 idea), switch statements and CSS animation/keyframes. 
+- Eventyret_mentor for spotting my file path bug and helping me fix it. 
+- John_McPherson_5P for helping me fix my original if/else statement bug. 
+- Jon_5P for his regular chats and positivity. 
+- Kera Cudmore_5p & Matthias Kiesel_5p for their Peer Review feedback. 
+- Love Maths project for reference and guidance.
+- Sebastian Immel (Mentor)
+- The book 'JavaScript for Kids' by Chris Minnick and Eva Holland. This is where the idea for the quote generator came from.
+ 
