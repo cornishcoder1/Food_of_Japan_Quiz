@@ -1,3 +1,7 @@
+Use consistent and effective markdown formatting that is well-structured, easy to follow, and has few grammatical errors when writing a README file.
+
+Write a README.md file in English for the Python application that explains its purpose and the value that it provides to its users.
+
 
 # Food of Japan Quiz
 
@@ -54,6 +58,7 @@ Wireframe for terminal onload view:
 ------
 
 # User Experience 
+Present a clear rationale for the development of the project in the README, demonstrating that it has a clear, well-defined purpose addressing the critical goals of the application for a particular target audience (or multiple related audiences).
 
 ------
 
@@ -62,6 +67,9 @@ Wireframe for terminal onload view:
 ------
 
 # Features 
+Document the rationale as to why a particular library/libraries are necessary for the implementation of the project.
+Demonstrate, through screenshots, what the project outcomes are and how they have been met.
+
 
 <div align="center">
 
@@ -128,10 +136,14 @@ This quote generator would work best as an element incorporated into a wider web
 
 # Testing
 Pep8, given invalid inputs, tested in local/deployed terminals. 
+Write Python code that passes through a linter (eg PEP8) with no significant issues.
+Document the implementation of manual testing for code validation(using PEP Validators).
 
 ------
 
 # Bugs
+Document validation error-based fixes implemented and identify and explain any unsolved validation errors.
+
 
 ## Fixed
 -
@@ -145,6 +157,8 @@ Pep8, given invalid inputs, tested in local/deployed terminals.
 # Deployment 
 
 Deployment was done at the start of the project to allow device testing throughout the development process. 
+Document the deployment procedure in a section in the README file.
+
 
 My <a href="https://cornishcoder1.github.io/The-Green-Lorry/" aria-label="Link to open deployed site">project</a> was deployed via GitHub Pages as follows:
 
