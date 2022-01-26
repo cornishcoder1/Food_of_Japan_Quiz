@@ -5,7 +5,6 @@ colorama.init(autoreset=True)#auto resets your settings after every output
 
 print(f"{Fore.GREEN}green is one of the colors, there are many other colors!")
 
-
 quiz_data = [
     {"question": "This dish is a speciality in the region of Gunma, typically consisting of pork\ntenderloin which is breaded and deep fried.",
      "answers": {"A": "Menchikatsu",
@@ -84,7 +83,8 @@ def start_quiz():
     Starting point of quiz, displays ASCII title text and sushi images. Gets user name, shows instructions
     and asks user if they are ready to begin.
     """
-    print("""
+    
+    print(f"""{Fore.MAGENTA}
  _____  ___   ___  ___         ___  _____       ____  ____ ____   ____ ____  __ 
 |     |/   \ /   \|   \       /   \|     |     |    |/    |    \ /    |    \|  |
 |   __|     |     |    \     |     |   __|     |__  |  o  |  o  |  o  |  _  |  |
