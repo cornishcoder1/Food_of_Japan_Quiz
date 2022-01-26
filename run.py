@@ -82,7 +82,7 @@ def start_quiz():
     and asks user if they are ready to begin.
     """
     
-    print(f"""{Fore.CYAN}
+    print(f"""{Fore.CYAN}{Style.BRIGHT}
  _____  ___   ___  ___         ___  _____       ____  ____ ____   ____ ____  __ 
 |     |/   \ /   \|   \       /   \|     |     |    |/    |    \ /    |    \|  |
 |   __|     |     |    \     |     |   __|     |__  |  o  |  o  |  o  |  _  |  |
