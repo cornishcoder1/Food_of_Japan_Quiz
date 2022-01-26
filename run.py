@@ -153,7 +153,7 @@ def run_quiz(quiz_data):
             print(f"{Fore.GREEN}Correct\n")
             score += 1
         else:
-            print("Oops! Better luck next time\n")
+            print(f"{Fore.RED}Oops! Better luck next time\n")
             score += 0
 
     final_score(score)
