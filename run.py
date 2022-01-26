@@ -81,8 +81,8 @@ def start_quiz():
     Starting point of quiz, displays ASCII title text and sushi images. Gets user name, shows instructions
     and asks user if they are ready to begin.
     """
-    
-    print(f"""{Fore.CYAN}{Style.BRIGHT}
+
+    print(f"""{Fore.GREEN}{Style.BRIGHT}
  _____  ___   ___  ___         ___  _____       ____  ____ ____   ____ ____  __ 
 |     |/   \ /   \|   \       /   \|     |     |    |/    |    \ /    |    \|  |
 |   __|     |     |    \     |     |   __|     |__  |  o  |  o  |  o  |  _  |  |
@@ -90,8 +90,8 @@ def start_quiz():
 |   _]|     |     |     |    |     |   _]     /  |  |  _  |  |  |  _  |  |  |__ 
 |  |  |     |     |     |    |     |  |       \  `  |  |  |  |  |  |  |  |  |  |
 |__|   \___/ \___/|_____|     \___/|__|        \____|__|__|__|  |__|__|__|__|__|
-                                                                                
-    \n""") 
+                                                                       
+     """) 
     print(f"""{Fore.MAGENTA}{Style.BRIGHT}
             ,     ,                                    ,,,,,,,,,,,
      ;';' ''''' ;,;        ------;;;;------       ,'' ;  ;  ;  ''|||\//
@@ -99,7 +99,7 @@ def start_quiz():
     ;,;'        ';,'        |    |;;|    |         |            |
      '.________.'            '.__|;;|__.'           '.________.'
     \n""")
-    
+
 
     global name
     name = input("Please enter you name:\n")
@@ -138,7 +138,7 @@ def run_quiz(quiz_data):
     for entry in quiz_data:
         user_answer = ''
         while user_answer not in ['A', 'B', 'C']:
-            print(f"{entry['question']}")
+            print(f"{Fore.MAGENTA}{entry['question']}")
             for key, value in entry['answers'].items():
                 print(f" \t {key}: {value}")
         
