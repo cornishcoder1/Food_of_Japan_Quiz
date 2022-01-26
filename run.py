@@ -1,3 +1,11 @@
+import colorama
+from colorama import Fore, Back, Style
+# 5. the best way is to use colorama with f-strings
+colorama.init(autoreset=True)#auto resets your settings after every output
+
+print(f"{Fore.GREEN}green is one of the colors, there are many other colors!")
+
+
 quiz_data = [
     {"question": "This dish is a speciality in the region of Gunma, typically consisting of pork\ntenderloin which is breaded and deep fried.",
      "answers": {"A": "Menchikatsu",
@@ -50,7 +58,7 @@ quiz_data = [
                  "B": "Taiyaki",
                  "C": "Mitarashi Dango"},
      "correct_answer": "B"}
-] 
+]
 
 #=====================================================================
 
@@ -142,10 +150,10 @@ def run_quiz(quiz_data):
                 print("Only a, b or c will be accepted as answers\n")
 
         if user_answer == entry['correct_answer']:
-            print("Correct\n")
+            print(f"{Fore.GREEN}Correct\n")
             score += 1
         else:
-            print("Oops sorry! Better luck next time\n")
+            print("Oops! Better luck next time\n")
             score += 0
 
     final_score(score)
@@ -178,6 +186,7 @@ def play_again():
 
 start_quiz()
 run_quiz(quiz_data)
+
 
 while play_again():
     start_quiz()
