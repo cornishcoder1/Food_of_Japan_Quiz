@@ -138,7 +138,7 @@ def run_quiz(quiz_data):
     for entry in quiz_data:
         user_answer = ''
         while user_answer not in ['A', 'B', 'C']:
-            print(f"{Fore.MAGENTA}{entry['question']}")
+            print(f"{Fore.MAGENTA}{Style.BRIGHT}{entry['question']}")
             for key, value in entry['answers'].items():
                 print(f" \t {key}: {value}")
         
