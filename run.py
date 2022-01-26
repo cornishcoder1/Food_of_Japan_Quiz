@@ -1,7 +1,6 @@
 import colorama
 from colorama import Fore, Back, Style
-# 5. the best way is to use colorama with f-strings
-colorama.init(autoreset=True)#auto resets your settings after every output
+colorama.init(autoreset=True)#auto resets color settings after every output
 
 quiz_data = [
     {"question": "This dish is a speciality in the region of Gunma, typically consisting of pork\ntenderloin which is breaded and deep fried.",
@@ -90,7 +89,7 @@ def start_quiz():
 |   _]|     |     |     |    |     |   _]     /  |  |  _  |  |  |  _  |  |  |__ 
 |  |  |     |     |     |    |     |  |       \  `  |  |  |  |  |  |  |  |  |  |
 |__|   \___/ \___/|_____|     \___/|__|        \____|__|__|__|  |__|__|__|__|__|
-                                                                       
+                                                                    
      """) 
     print(f"""{Fore.MAGENTA}{Style.BRIGHT}
             ,     ,                                    ,,,,,,,,,,,
