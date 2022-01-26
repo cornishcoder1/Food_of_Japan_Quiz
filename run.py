@@ -3,8 +3,6 @@ from colorama import Fore, Back, Style
 # 5. the best way is to use colorama with f-strings
 colorama.init(autoreset=True)#auto resets your settings after every output
 
-print(f"{Fore.GREEN}green is one of the colors, there are many other colors!")
-
 quiz_data = [
     {"question": "This dish is a speciality in the region of Gunma, typically consisting of pork\ntenderloin which is breaded and deep fried.",
      "answers": {"A": "Menchikatsu",
