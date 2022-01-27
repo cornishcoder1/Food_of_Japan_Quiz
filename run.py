@@ -191,3 +191,4 @@ while play_again():
     run_quiz(quiz_data)
 else:
     print("end of quiz")
+    print("click the 'RUN PROGRAM' button to reset the quiz")
