@@ -1,5 +1,5 @@
 import colorama
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 colorama.init(autoreset=True)#auto resets color settings after every output
 
 quiz_data = [
