@@ -103,7 +103,7 @@ def start_quiz():
     global name
     name = input("Please enter you name:\n")
 
-    while not name.strip():
+    while not name.strip(): #fixed bug
         print("Please enter your name to begin the quiz\n")
         name = input("Please enter you name:\n")
     else:
@@ -152,8 +152,7 @@ def run_quiz(quiz_data):
             score += 1
         else:
             print(f"{Fore.RED}Oops! Better luck next time\n")
-            score += 0
-
+          
     final_score(score)
 
 
