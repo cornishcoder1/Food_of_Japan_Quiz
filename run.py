@@ -175,11 +175,19 @@ def play_again():
     """
     Asks user if they want to play again. Returns to start of quiz, or ends quiz depending on user input
     """
-    response = input("Do you want to play again? y/n\n")
-    response = response.upper()
+    
+    restart_quiz = True
 
-    if response == "Y":
-        return True
+    while restart_quiz:
+        response = input("Do you want to play again? y/n\n")
+        response = response.upper()
+
+        if response == "Y":
+            return True
+        elif response == "N":
+            return False
+        else:
+            print("That is not a valid option\n")
 
 
 start_quiz()
