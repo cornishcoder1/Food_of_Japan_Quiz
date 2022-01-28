@@ -103,7 +103,7 @@ def start_quiz():
     global name
     name = input("Please enter you name:\n")
 
-    while name == "" or name == " ":
+    while not name.strip():
         print("Please enter your name to begin the quiz\n")
         name = input("Please enter you name:\n")
     else:
