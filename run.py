@@ -13,7 +13,7 @@ quiz_data = [
                  "B": "Nigiri",
                  "C": "Maki"},
      "correct_answer": "B"},
-    {"question": "These boiled dumplings are usually served in a very light broth, filled with ground meat and vegetables.",
+    {"question": "These boiled dumplings are usually served in a very light broth, filled with/n ground meat and vegetables.",
      "answers": {"A": "Yaki gyoza",
                  "B": "Sui gyoza",
                  "C": "Age gyoza"},
