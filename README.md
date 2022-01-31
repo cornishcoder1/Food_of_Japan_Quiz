@@ -58,6 +58,29 @@ I produced a basic wireframe with <a href="https://www.balsamiq.com">Balsamiq</a
 # User Experience 
 Present a clear rationale for the development of the project in the README, demonstrating that it has a clear, well-defined purpose addressing the critical goals of the application for a particular target audience (or multiple related audiences).
 
+My application is aimed at users looking for a fun quiz to test their knowledge of Japanese cuisine. I have attempted to maximise readibility with the use of new line and tab characters throughout the code, to give adequate spacing and separation of different elements of the quiz layout. I have also used the 'Colorama' Python module to add colors to the text, which adds a pleasing visual element to the quiz and also aids readability.
+
+## Application Goals
+- Provide some visuals with the use of images and colour to contribute to a positive user experience.
+- Provide the user with a fun, engaging and easy to play multiple choice quiz.
+- Provide clear instructions on how to play the quiz.
+- Provide an appropriate response to all user inputs and ensure any invalid data is handled appropriately. 
+- Accurately keep track of and display the user’s score clearly at the end of the quiz. 
+
+
+## User Stories
+As a user I want:
+- To play a fun and easy to use quiz.
+- Clear instructions on how to use the quiz.
+- To test my knowledge of Japanese cuisine.
+- To be informed when my input is invalid, and to be given the opportunity to correct any invalid input without interrupting the flow of the quiz.
+- To be able to read the application output clearly. 
+- To see my total score out of ten at the end of the quiz.
+- To be able to easily repeat the quiz if I want to try again. 
+
+
+
+
 ------
 
 # How to Play
