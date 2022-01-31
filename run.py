@@ -3,7 +3,7 @@ import colorama
 from colorama import Fore, Style
 colorama.init(autoreset=True)
 
-quiz_data = [
+quiz_data = [#Fixed bug (back slashes to shorten question strings for PEP8)
     {"question": "This dish is a speciality in the region of Gunma, typically\
  consisting of pork\ntenderloin which is breaded and deep fried.",
      "answers": {"A": "Menchikatsu",

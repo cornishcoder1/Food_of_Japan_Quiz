@@ -19,9 +19,9 @@ Write a README.md file in English for the Python application that explains its p
 
 2. [Wireframes](#wireframes)
 
-3. [User Experience/Stories](#user-experience)
+3. [How To Play](#how-to-play)
 
-4. [How To Play](#how-to-play)
+4. [User Experience/Stories](#user-experience)
 
 5. [Features](#features)
 
@@ -55,13 +55,16 @@ I produced a basic wireframe with <a href="https://www.balsamiq.com">Balsamiq</a
 
 ------
 
+# How to Play
+
+------
+
 # User Experience 
 Present a clear rationale for the development of the project in the README, demonstrating that it has a clear, well-defined purpose addressing the critical goals of the application for a particular target audience (or multiple related audiences).
 
-## Application Goals
-- Provide some visuals with the use of images and colour to contribute to a positive user experience.
+## Project Goals
 - Provide the user with a fun, engaging and easy to play multiple choice quiz.
-- Provide clear instructions on how to play the quiz.
+- Provide some visuals with the use of images and colour to contribute to a positive user experience.
 - Provide an appropriate response to all user inputs and ensure any invalid data is handled appropriately. 
 - Accurately keep track of and display the user’s score clearly at the end of the quiz. 
 
@@ -76,63 +79,21 @@ As a user I want:
 - To see my total score out of ten at the end of the quiz.
 - To be able to easily repeat the quiz if I want to try again. 
 
-
-
-
-------
-
-# How to Play
-
 ------
 
 # Features 
 Document the rationale as to why a particular library/libraries are necessary for the implementation of the project.
 Demonstrate, through screenshots, what the project outcomes are and how they have been met.
 
+## Main page and welcome screen 
 
-<div align="center">
+## Instructions
 
-**Heading and Introduction**
+## Questions
 
-The heading and introductory text clearly explain to the user what the page is, and what service is being quoted for. 
+## Final Score
 
-![Screenshot of heading and introductory text](./assets/screenshots/header_and_introduction.png)
-
-
-</div>
-
-<div align="center">
-
-**Quote Form**
-
-This section allows the user to select the type of item they require a price for, and what areas the item is to be collected from and delivered to. If 'other' is selected in the 'type of item' selector then the user is advised to contact The Green Lorry for a bespoke quote. If the item is to be collected from an area outside of Bristol, then a distance surcharge is applied to the quote. No additional charges are applied to any of the specified 'Delivering to' locations, as they are all areas of Bristol (price variables are only applied to type of item and location of collection). Users can generate a new quote by changing the options and re-clicking the 'Generate Quote' button to refresh the quote output.  
-
-![Screenshot of quote form](./assets/screenshots/quote_form.png)
-
-
-</div>
-
-<div align="center">
-
-**Quote Output Section**
-
-This section returns the generated quote information based on what options the user has selected. It clearly displays a thank you message, distance surcharge (if applicable), item collection charge and most importantly the quote total. 
-
-![Screenshot of quote output section](./assets/screenshots/quote_output_section.png)
-
-
-</div>
-
-<div align="center">
-
-**Footer**
-
-The footer contains contact information, should the user need further assistance and an animated lorry which moves across the page when the 'Generate Quote' button is clicked.  
-
-![Screenshot of Footer](./assets/screenshots/footer.png)
-
-
-</div>
+## Play Again
 
 ## Features left to implement
 
