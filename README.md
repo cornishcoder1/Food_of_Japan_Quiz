@@ -5,11 +5,11 @@ Write a README.md file in English for the Python application that explains its p
 
 # Food of Japan Quiz
 
-<p>Introduction here</p>
+<p>My command line application built with Python is a quiz titled 'Food of Japan'. Users test their knowledge of Japanese cuisine by answering 10 food themed multiple choice questions, with their score being returned to them at the end of the quiz. They then have the option to play again, or end the quiz. </p>
 
 <a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open deployed site">Link to deployed site</a>
 
-<img src="assets/images/am_I_responsive_screenshot.png">Am I responsive? image here
+<img src="assets/images/am_i_responsive_screenshot.png">Am I responsive? image here
 
 ------
 
