@@ -138,9 +138,10 @@ def run_quiz(quiz_data):
         user_answer = ''
         while user_answer not in ['A', 'B', 'C']:
             print(f"{Fore.MAGENTA}{Style.BRIGHT}{entry['question']}")
+
             for key, value in entry['answers'].items():
-                print(f" \t {key}: {value}")
-        
+                print(f"\t{key}: {value}")
+                
             user_answer = input("What is your answer?\n")
             user_answer = user_answer.upper()
 
