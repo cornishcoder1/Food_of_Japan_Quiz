@@ -1,25 +1,30 @@
+import textwrap
 import colorama
 from colorama import Fore, Style
 colorama.init(autoreset=True)
 
 quiz_data = [
-    {"question": "This dish is a speciality in the region of Gunma, typically consisting of pork\ntenderloin which is breaded and deep fried.",
+    {"question": "This dish is a speciality in the region of Gunma, typically\
+ consisting of pork\ntenderloin which is breaded and deep fried.",
      "answers": {"A": "Menchikatsu",
                  "B": "Katsudon",
                  "C": "Tonkatsu"},
      "correct_answer": "C"},
-    {"question": "A type of sushi, consisting of pressed rice usually topped with fish.",
+    {"question": "A type of sushi, consisting of pressed rice usually topped\
+ with fish.",
      "answers": {"A": "Sashimi",
                  "B": "Nigiri",
                  "C": "Maki"},
      "correct_answer": "B"},
-    {"question": "These boiled dumplings are usually served in a very light broth, filled with\nground meat and vegetables.",
+    {"question": "These boiled dumplings are usually served in a very light\
+ broth, filled with\nground meat and vegetables.",
      "answers": {"A": "Yaki gyoza",
                  "B": "Sui gyoza",
                  "C": "Age gyoza"},
      "correct_answer": "B"},
 
-    {"question": "Katsuobushi shavings (or bonito flakes) are derived from which fish?",
+    {"question": "Katsuobushi shavings (or bonito flakes) are derived from\
+ which fish?",
      "answers": {"A": "Tuna",
                  "B": "Salmon",
                  "C": "Mackerel"},
@@ -29,33 +34,38 @@ quiz_data = [
                  "B": "Karrage",
                  "C": "Wasabi"},
      "correct_answer": "C"},
-    {"question": "Found all over Japan in street food markets and sushi restaurants, this fried\nrolled omelette is typically seasoned with salt and dashi.",
+    {"question": "Found all over Japan in street food markets and sushi\
+ restaurants, this fried\nrolled omelette is typically seasoned with salt and\
+ dashi.",
      "answers": {"A": "Tamagoyaki",
                  "B": "Datemaki",
                  "C": "Okonomiyaki"},
      "correct_answer": "A"},
-    {"question": "Which of the Japanese islands is famous for it’s Tarabagani (King Crab)?",
+    {"question": "Which of the Japanese islands is famous for it’s Tarabagani\
+ (King Crab)?",
      "answers": {"A": "Tashiro",
                  "B": "Hokkaido",
                  "C": "Sado"},
      "correct_answer": "B"},
-    {"question": "Which Japanese fruit is said to be one of the most expensive in the world?",
+    {"question": "Which Japanese fruit is said to be one of the most expensive\
+ in the world?",
      "answers": {"A": "Akebi",
                  "B": "Momo peach",
                  "C": "Yubari melon"},
      "correct_answer": "C"},
-    {"question": "Which variety of beef is identified by it’s fatty, well-marbled texture?",
+    {"question": "Which variety of beef is identified by it’s fatty,\
+ well-marbled texture?",
      "answers": {"A": "Yonezawa",
                  "B": "Mishima",
                  "C": "Kobe"},
      "correct_answer": "C"},
-    {"question": "What fish-shaped pancake is traditionally filled with sweetened adzuki beans?",
+    {"question": "What fish-shaped pancake is traditionally filled with\
+ sweetened adzuki beans?",
      "answers": {"A": "Zabuton Dora",
                  "B": "Taiyaki",
                  "C": "Mitarashi Dango"},
      "correct_answer": "B"}
 ]
-
 
 def count_keys(quiz_data):
     """
