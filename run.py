@@ -1,26 +1,6 @@
 import colorama
 from colorama import Fore, Style
-colorama.init(autoreset=True)#auto resets color settings after every output
-
-import gspread
-from google.oauth2.service_account import Credentials
-
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
-
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('food_of_japan_scores')
-
-scores = SHEET.worksheet('scores')
-
-data = scores.get_all_values()
-
-print(data)
+colorama.init(autoreset=True)
 
 quiz_data = [
     {"question": "This dish is a speciality in the region of Gunma, typically consisting of pork\ntenderloin which is breaded and deep fried.",
@@ -53,7 +33,7 @@ quiz_data = [
      "answers": {"A": "Tamagoyaki",
                  "B": "Datemaki",
                  "C": "Okonomiyaki"},
-     "correct_answer": "A"}, 
+     "correct_answer": "A"},
     {"question": "Which of the Japanese islands is famous for it’s Tarabagani (King Crab)?",
      "answers": {"A": "Tashiro",
                  "B": "Hokkaido",
@@ -63,12 +43,12 @@ quiz_data = [
      "answers": {"A": "Akebi",
                  "B": "Momo peach",
                  "C": "Yubari melon"},
-     "correct_answer": "C"}, 
+     "correct_answer": "C"},
     {"question": "Which variety of beef is identified by it’s fatty, well-marbled texture?",
      "answers": {"A": "Yonezawa",
                  "B": "Mishima",
                  "C": "Kobe"},
-     "correct_answer": "C"}, 
+     "correct_answer": "C"},
     {"question": "What fish-shaped pancake is traditionally filled with sweetened adzuki beans?",
      "answers": {"A": "Zabuton Dora",
                  "B": "Taiyaki",
@@ -76,13 +56,12 @@ quiz_data = [
      "correct_answer": "B"}
 ]
 
-#=====================================================================
-
 
 def count_keys(quiz_data):
     """
-    Counts number of questions in dictionary for the f string on line ENTER LINE NUMBER (this allows more questions 
-    to be added to dictionary and the intro text to automatically update with number of questions).
+    Counts number of questions in dictionary for the f string on line 10
+    (this allows more questions to be added to dictionary and the intro text
+    to automatically update with number of questions).
     """
     count = 0
     for i in enumerate(quiz_data):
@@ -93,24 +72,22 @@ def count_keys(quiz_data):
 num_of_questions = (count_keys(quiz_data))
 
 
-#=====================================================================
-
 def start_quiz():
     """
-    Starting point of quiz, displays ASCII title text and sushi images. Gets user name, shows instructions
-    and asks user if they are ready to begin.
+    Starting point of quiz, displays ASCII title text and sushi images. Gets
+    user name, shows instructions and asks user if they are ready to begin.
     """
 
     print(f"""{Fore.GREEN}{Style.BRIGHT}
- _____  ___   ___  ___         ___  _____       ____  ____ ____   ____ ____  __ 
+ _____  ___   ___  ___         ___  _____       ____  ____ ____   ____ ____  __
 |     |/   \ /   \|   \       /   \|     |     |    |/    |    \ /    |    \|  |
 |   __|     |     |    \     |     |   __|     |__  |  o  |  o  |  o  |  _  |  |
 |  |_ |  O  |  O  |  D  |    |  O  |  |_       __|  |     |   _/|     |  |  |__|
-|   _]|     |     |     |    |     |   _]     /  |  |  _  |  |  |  _  |  |  |__ 
+|   _]|     |     |     |    |     |   _]     /  |  |  _  |  |  |  _  |  |  |__
 |  |  |     |     |     |    |     |  |       \  `  |  |  |  |  |  |  |  |  |  |
 |__|   \___/ \___/|_____|     \___/|__|        \____|__|__|__|  |__|__|__|__|__|
-                                                                    
-     """) 
+
+""")
     print(f"""{Fore.MAGENTA}{Style.BRIGHT}
             ,     ,                                    ,,,,,,,,,,,
      ;';' ''''' ;,;        ------;;;;------       ,'' ;  ;  ;  ''|||\//
@@ -119,11 +96,10 @@ def start_quiz():
      '.________.'            '.__|;;|__.'           '.________.'
     \n""")
 
-
     global name
     name = input("Please enter you name:\n")
 
-    while not name.strip(): #fixed bug
+    while not name.strip():#fixed bug
         print("Please enter your name to begin the quiz\n")
         name = input("Please enter you name:\n")
     else:
@@ -146,12 +122,11 @@ def start_quiz():
         else:
             print("That is not a valid option\n")
 
-#==================================================================================            
-
 
 def run_quiz(quiz_data):
     """
-    Iterates through quiz questions and potential answers, gets user input and implements score by one or zero, depending on user input. 
+    Iterates through quiz questions and potential answers, gets user input and
+    implements score by one or zero, depending on user input.
     """
     score = 0
     for entry in quiz_data:
@@ -161,7 +136,7 @@ def run_quiz(quiz_data):
 
             for key, value in entry['answers'].items():
                 print(f"\t{key}: {value}")
-                
+
             user_answer = input("What is your answer?\n")
             user_answer = user_answer.upper()
 
@@ -173,13 +148,8 @@ def run_quiz(quiz_data):
             score += 1
         else:
             print(f"{Fore.RED}Oops! Better luck next time\n")
-          
+
     final_score(score)
-
-
-
-
-#=======================================================
 
 
 def final_score(score):
@@ -188,14 +158,13 @@ def final_score(score):
     """
     print(f"Congratulations {name}! Your final score is {score} out of 10")
 
-#=======================================================
-
 
 def play_again():
     """
-    Asks user if they want to play again. Returns to start of quiz, or ends quiz depending on user input
+    Asks user if they want to play again. Returns to start of quiz, or ends
+    quiz depending on user input
     """
-    
+
     restart_quiz = True
 
     while restart_quiz:
