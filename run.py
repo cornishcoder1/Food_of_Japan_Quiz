@@ -2,6 +2,26 @@ import colorama
 from colorama import Fore, Style
 colorama.init(autoreset=True)#auto resets color settings after every output
 
+import gspread
+from google.oauth2.service_account import Credentials
+
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+    ]
+
+CREDS = Credentials.from_service_account_file('creds.json')
+SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+SHEET = GSPREAD_CLIENT.open('food_of_japan_scores')
+
+scores = SHEET.worksheet('scores')
+
+data = scores.get_all_values()
+
+print(data)
+
 quiz_data = [
     {"question": "This dish is a speciality in the region of Gunma, typically consisting of pork\ntenderloin which is breaded and deep fried.",
      "answers": {"A": "Menchikatsu",

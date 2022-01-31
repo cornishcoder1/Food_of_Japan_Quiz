@@ -1,24 +1,19 @@
-from termcolor import colored
+import gspread
+from google.oauth2.service_account import Credentials
 
-colors = ['red', 'yellow', 'green', 'cyan', 'blue', 'magenta']
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+    ]
 
- 
+CREDS = Credentials.from_service_account_file('creds.json')
+SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+SHEET = GSPREAD_CLIENT.open('food_of_japan_scores')
 
-for color in colors: 
-    print(colored("""
- _____  ___   ___  ___         ___  _____       ____  ____ ____   ____ ____  __ 
-|     |/   \ /   \|   \       /   \|     |     |    |/    |    \ /    |    \|  |
-|   __|     |     |    \     |     |   __|     |__  |  o  |  o  |  o  |  _  |  |
-|  |_ |  O  |  O  |  D  |    |  O  |  |_       __|  |     |   _/|     |  |  |__|
-|   _]|     |     |     |    |     |   _]     /  |  |  _  |  |  |  _  |  |  |__ 
-|  |  |     |     |     |    |     |  |       \  `  |  |  |  |  |  |  |  |  |  |
-|__|   \___/ \___/|_____|     \___/|__|        \____|__|__|__|  |__|__|__|__|__|
-                                                                                
+scores = SHEET.worksheet('scores')
 
-            ,     ,                                    ,,,,,,,,,,,
-     ;';' ''''' ;,;        ------;;;;------       ,'' ;  ;  ;  ''|||\//
-    ,'  ________  ',      |______|;;|______|      ',,_;__;__;__;,'''/\\
-    ;,;'        ';,'        |    |;;|    |         |            |
-     '.________.'            '.__|;;|__.'           '.________.'
+data = scores.get_all_values()
 
-    \n""", color), end="")
+print(data)
