@@ -108,8 +108,22 @@ The user is then asked if they are ready to play the quiz by typing 'y' for yes 
 
 <img src="assets/screenshots/start_quiz_not_ready.png">
 
-
 ## Questions
+*Project Goal - Provide the user with a fun, engaging and easy to play multiple choice quiz.*
+
+*As a user I want to test my knowledge of Japanese cuisine.*
+
+*As a user I want to be able to read the application output clearly.*
+
+The quiz contains 10 multiple choice questions of varying difficulty (depending on the users level of interest and knowledge!), which are interated through in the same order each time the program is run. Each correctly answered question scores 1 point, and if the question is answered incorrectly then 0 points are awarded. To improve readability I have coloured the questions Magenta, and used the 'style.bright' Colorama feature to add boldness to the text. I have also used the tab character to indent the answer choices for the same purpose.  
+
+<img src="assets/screenshots/question.png">
+
+If the correct answer is selected by the user, they are informed with the output 'correct' which is colored in green, followed by the next question. If an incorrect answer is selected, the output 'Oops! Better luck next time' is shown in red. 
+
+<img src="assets/screenshots/question_correct.png">
+
+<img src="assets/screenshots/question_incorrect.png">
 
 ## Final Score
 
