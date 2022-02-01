@@ -106,11 +106,11 @@ def start_quiz():
     \n""")
 
     global name
-    name = input("Please enter you name:\n")
+    name = input("Please enter you name and hit the enter key:\n")
 
     while not name.strip():#fixed bug
         print("Please enter your name to begin the quiz\n")
-        name = input("Please enter you name and hit 'Enter':\n")
+        name = input("Please enter you name and hit the enter key:\n")
     else:
         print(f"Welcome to Food of Japan {name}!\n")
         print("Take the quiz to test your knowledge of Japanese cuisine.\n")
