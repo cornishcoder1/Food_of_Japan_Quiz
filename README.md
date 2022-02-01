@@ -86,6 +86,16 @@ Document the rationale as to why a particular library/libraries are necessary fo
 Demonstrate, through screenshots, what the project outcomes are and how they have been met.
 
 ## Main page and welcome screen 
+*Project Goal - Provide some visuals with the use of images and colour to contribute to a positive user experience.*
+
+As design and layout features in command line applications are restrictive, I decided to add a background image to the main page by manipulating the provided template's CSS. I also changed the color of the 'Run Program' button to better match the color scheme. Although not explicitly required for this project, I wanted to enhance the user experience with the addition of some color and visuals. The background image is bright and cheerful, and the Japanese cat salt and pepper shakers are in keeping with the Japanese food theme.
+
+I used ASCII font <a href="https://patorjk.com/software/taag/#p=display&f=Crawford2&t=Food%20of%20Japan!">'Crawford 2'</a> and <a href="https://asciiart.website/index.php?art=food%20and%20drink/other">art by Daniel Au</a> to create the quiz title and sushi icons, and have used the Python module 'Colorama' throughout the program to add color within the terminal.  
+
+The first input in the program asks the user to enter their name. This gives some personalisation to the quiz, as the program returns the name as a welcome, and at the end when the final score is displayed. 
+
+
+<img src="assets/screenshots/home_screen.png">
 
 ## Instructions
 
