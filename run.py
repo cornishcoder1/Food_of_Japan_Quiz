@@ -165,7 +165,11 @@ def final_score(score):
     """
     Displays final score at end of quiz
     """
-    print(f"Congratulations {name}! Your final score is {score} out of 10")
+    if score <= 5:
+        print(f"Great effort {name}! Your final score is {score} out of 10")
+        print("Take the quiz again to see if you can improve your score")
+    elif score > 5:
+        print(f"Congratulations {name}! Your final score is {score} out of 10")
 
 
 def play_again():
