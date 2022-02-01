@@ -98,6 +98,16 @@ The first input in the program asks the user to enter their name. This gives som
 <img src="assets/screenshots/home_screen.png">
 
 ## Instructions
+*As a user I want clear instructions on how to use the quiz*
+
+Once the user has entered their name, they are given a personalised welcome message, and are presented with a short descripion and simple instructions for the quiz. I have used new line characters to space out the text lines here to improve readability. 
+
+<img src="assets/screenshots/instructions.png">
+
+The user is then asked if they are ready to play the quiz by typing 'y' for yes or 'n' for no. This allows user initiation and control of the logic flow in this stage of the program. If the user types 'y' the quiz will begin, if 'n' is typed then a message appears asking them to type 'y' when ready, and the question repeats.
+
+<img src="assets/screenshots/start_quiz_not_ready.png">
+
 
 ## Questions
 
