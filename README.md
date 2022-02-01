@@ -72,7 +72,7 @@ Present a clear rationale for the development of the project in the README, demo
 ## User Stories
 As a user I want:
 - To play a fun and easy to use quiz.
-- Clear instructions on how to use the quiz.
+-  Clear instructions on how to use the quiz.
 - To test my knowledge of Japanese cuisine.
 - To be informed when my input is invalid, and to be given the opportunity to correct any invalid input without interrupting the flow of the quiz.
 - To be able to read the application output clearly. 
