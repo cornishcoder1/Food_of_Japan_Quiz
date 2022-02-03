@@ -142,11 +142,16 @@ The user is also asked if they would like to play again, by typing 'y' for yes o
 
 <img src= "assets/screenshots/play_again_end_quiz.png">
 
+## Invalid data handling
+Write code that handles empty or invalid input data.
+Implement exception/error handling to optimise the user experience
+
+
 
 
 ## Features left to implement
 
-This quote generator would work best as an element incorporated into a wider website for the fictional business. The generation of the quote could be the first step in a complete system which would also incorporate booking and payment. For the quote generator itself, there is alot of potential for it to be more intuitive. I would like to widen the range of items that are availble to select, or perhaps use a 'predictive' element where the user begins typing the item and the field autofills with potential options. I would also like to use a postcode API to make collection and delivery options more accurate, as the area options given at the moment are quite broad.  
+
 
 ------
 
