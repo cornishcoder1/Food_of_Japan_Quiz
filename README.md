@@ -125,9 +125,20 @@ If the correct answer is selected by the user, they are informed with the output
 
 <img src="assets/screenshots/question_incorrect.png">
 
-## Final Score
+## Final Score and Play Again
+*Project Goal - Accurately keep track of and display the user’s score clearly at the end of the quiz.*
 
-## Play Again
+*As a user I want to see my total score out of ten at the end of the quiz.*
+
+*As a user I want to be able to easily repeat the quiz if I want to try again.*
+
+Once all 10 questions have been iterated through, the user is then presented with their final score. Different messages are displayed, depending on whether the score is equal to or less that 5, or greater than 5. The message is personalised with the users name. 
+
+<img src="assets/screenshots/final_score.png">
+
+<img src="assets/screenshots/final_score_2.png">
+
+
 
 ## Features left to implement
 
