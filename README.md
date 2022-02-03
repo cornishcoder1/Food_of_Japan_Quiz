@@ -135,8 +135,12 @@ If the correct answer is selected by the user, they are informed with the output
 Once all 10 questions have been iterated through, the user is then presented with their final score. Different messages are displayed, depending on whether the score is equal to or less that 5, or greater than 5. The message is personalised with the users name. 
 
 <img src="assets/screenshots/final_score.png">
-
+<br> 
 <img src="assets/screenshots/final_score_2.png">
+
+The user is also asked if they would like to play again, by typing 'y' for yes or 'n' for no. If 'y' is typed the program sequence starts again. If 'n' is typed, a message informs the user the the quiz has ended and to click the 'Run Program' button if they wish to reset the quiz. 
+
+<img src= "assets/screenshots/play_again_end_quiz.png">
 
 
 
