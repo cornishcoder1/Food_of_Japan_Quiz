@@ -166,17 +166,15 @@ Users must type 'y' or 'n' to indicate whether or not they wish to play again. I
 <img src="assets/screenshots/play_again_error_handling.png">
 
 
-
-
 ## Features left to implement
 
-
+I would like to expand the size of the quiz, perhaps by adding an option to select a difficulty level at the beginning. This would then open a specific set of questions for that level. Another nice feature would be to have a high scores board displayed at the end of the quiz, so that the user can see how they did against others. This could be implemented with the help of Google Sheets to push and pull score data. 
 
 ------
 
 # Data Model
 
-- Dictionary?
+I used a dictionary in this programme to store the question and answer data for the quiz. I have written the code in a way that means additional questions can be added to the dictionary in the future, without having to amend any other code. This has been achieved through the use of f-Strings in print statements, so that accurate data is always displayed for the user score and total number of questions, regardless of the total number of questions present in the dictionary. 
 
 
 # Other resources used
