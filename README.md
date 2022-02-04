@@ -48,6 +48,7 @@ I produced a basic wireframe with <a href="https://www.balsamiq.com">Balsamiq</a
 
 <img src="assets/images/pp3_wireframe.png">
 
+
 # User Experience 
 
 ## Project Goals
@@ -67,7 +68,6 @@ As a user I want:
 - To see my total score out of ten at the end of the quiz.
 - To be able to easily repeat the quiz if I want to try again. 
 
-------
 
 # Features 
 
@@ -84,9 +84,9 @@ The first input in the program asks the user to enter their name. This gives som
 <img src="assets/screenshots/home_screen.png">
 
 ## Instructions
-*As a user I want clear instructions on how to use the quiz*
+*As a user I want clear instructions on how to use the quiz.*
 
-Once the user has entered their name, they are given a personalised welcome message, and are presented with a short descripion and simple instructions for the quiz. I have used new line characters to space out the text lines here to improve readability. 
+Once the user has entered their name, they are given a personalised welcome message, and are presented with a short description and simple instructions for the quiz. I have used new line characters to space out some of the text lines here to improve readability. 
 
 <img src="assets/screenshots/instructions.png">
 
@@ -101,7 +101,7 @@ The user is then asked if they are ready to play the quiz by typing 'y' for yes 
 
 *As a user I want to be able to read the application output clearly.*
 
-The quiz contains 10 multiple choice questions of varying difficulty (depending on the users level of interest and knowledge!), which are interated through in the same order each time the program is run. Each correctly answered question scores 1 point, and if the question is answered incorrectly then 0 points are awarded. To improve readability I have coloured the questions Magenta, and used the 'style.bright' Colorama feature to add boldness to the text. I have also used the tab character to indent the answer choices for the same purpose.  
+The quiz contains 10 multiple choice questions of varying difficulty (depending on the users level of interest and knowledge!), which are iterated through in the same order each time the program is run. Each correctly answered question scores 1 point, and if the question is answered incorrectly then 0 points are awarded. To improve readability I have coloured the questions magenta, and used the 'style.bright' Colorama feature to add boldness to the text. I have also used the tab character to indent the answer choices for the same purpose.  
 
 <img src="assets/screenshots/question.png">
 
@@ -128,7 +128,8 @@ The user is also asked if they would like to play again, by typing 'y' for yes o
 
 <img src= "assets/screenshots/play_again_end_quiz.png">
 
-# Invalid data handling
+
+# Invalid Data Handling
 
 ## Upper or lower case characters 
 All input will be accepted in lower or upper case. For example if the user selects answer 'a' with an uppercase 'A', this input will still be accepted by the programme as valid. 
@@ -153,18 +154,15 @@ Users must type 'y' or 'n' to indicate whether or not they wish to play again. I
 
 <img src="assets/screenshots/play_again_error_handling.png">
 
-
 ## Features left to implement
 
 I would like to expand the size of the quiz, perhaps by adding an option to select a difficulty level at the beginning. This would then open a specific set of questions for that level. Another nice feature would be to have a high scores board displayed at the end of the quiz, so that the user can see how they did against others. This could be implemented with the help of Google Sheets to push and pull score data. 
 
-------
 
 # Data Model
 
 I used a dictionary in this programme to store the question and answer data for the quiz. I have written the code in a way that means additional questions can be added to the dictionary in the future, without having to amend any other code. This has been achieved through the use of f-Strings in print statements, so that accurate data is always displayed for the user score and total number of questions, regardless of the total number of questions present in the dictionary. 
 
-------
 
 # Testing
 
@@ -188,7 +186,6 @@ Lighthouse scored the site highly on Performance and Accessibility.
 
 <img href="assets/screenshots/lighthouse_validator_screenshot.png">
 
-------
 
 # Bugs
 
@@ -202,7 +199,6 @@ Lighthouse scored the site highly on Performance and Accessibility.
 
 - No remaining bugs. 
 
-------
 
 # Other resources used
 
@@ -218,7 +214,6 @@ Lighthouse scored the site highly on Performance and Accessibility.
 
 <a href="https://patorjk.com/software/taag/#p=display&f=Crawford2&t=Food%20of%20Japan!"> - Patorjk.com (text to ASCII generator)
 
-------
 
 # Deployment 
 
@@ -241,7 +236,6 @@ My <a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open 
 13. Ensure that ‘main’ branch is selected in Manual deploy section and click ‘Deploy Branch’.
 14. Once deployed, click ‘view’ to access deployed project.  
 
-------
 
 # Credits 
 
@@ -255,8 +249,6 @@ I used the following websites for research:
     - <a href="https://www.youtube.com/watch?v=IMSYyb5U-9g"> What $20 Buys You at a Japanese Street Food Market</a>
     - <a href="https://www.youtube.com/watch?v=MWOwEWMquP8"> I Tried Kobe Beef for the First Time</a>
     - <a href="https://www.youtube.com/watch?v=RsuuFrEPLrE">Japanese Street Food in TSUKIJI Market</a>
-
-<br>
 
 ## Media 
 
