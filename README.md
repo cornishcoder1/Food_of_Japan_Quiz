@@ -180,7 +180,7 @@ I have carried out the following manual tests throughout the development process
 
 I ran my code through the <a href="http://pep8online.com">PEP8 linter</a>, no problems were detected. 
 
-<img src="assets/screenhots/pep8_validator_screenshot.png">
+<img src="assets/screenshots/pep8_validator_screenshot.png">
 
 ## Accessibility Testing
 
