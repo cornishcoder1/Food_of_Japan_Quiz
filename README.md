@@ -223,12 +223,12 @@ Deployment was done at the start of the project to allow device testing througho
 
 My <a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open deployed site">project</a> was deployed via <a href="https://heroku.com">Heroku</a> as follows:
 
-1. Remove un-used imports from run.py file
+1. Remove un-used imports from run.py file.
 2. In order for input methods to work properly in the deployed mock terminal, add a new line character at the end of the text, inside the input method. 
 3. If required, create list of requirements with the following command in the terminal:  pip3 freeze > requirements.txt
 4. In Heroku account, go to Dashboard and click ‘Create New App’. Give the app a unique name and select region (Europe).
 5. Click ‘Create App’.
-6. Got to Settings tap and set up Config Vars (not required if not using a creds.json file).
+6. Go to Settings tap and set up Config Vars (only required if using a creds.json file).
 7. Click ‘Add Buildpack’, select Python and click ‘Save Changes’.
 8. Then select ‘NodeJS’ and click save again. IMPORTANT - Buildpacks should be in order. Python on top of NodeJS.
 9. Click on ‘Deploy’ tab.
@@ -258,14 +258,12 @@ I used the following websites for research:
 
 2. Sushi ASCII by Daniel Au, from <a href="https://asciiart.website/">Ascii Art</a>
 
-<br>
-
 ## Acknowledgements 
 
 - Declan_5P_Lead and Sean Young for helping me with my understanding of while loops.
 - Dave_Horrocks_5p_lead for his extensive peer review, and for drawing my attention to the name input bug. 
 - Johann from Tutor Support for helping me with my dictionary. 
-- Computer Science Tutorials' YouTube Video <a href="https://www.youtube.com/watch?v=LXSvzUimHBk"> 'Simple Quiz Plus Flowchart Python' for helping me get started with a flowchart.</a>
+- Computer Science Tutorials' YouTube Video <a href="https://www.youtube.com/watch?v=LXSvzUimHBk"> 'Simple Quiz Plus Flowchart Python'</a> for helping me get started with a flowchart.
 - Bro Code's YouTube video <a href="https://www.youtube.com/watch?v=yriw5Zh406s"> 'Python Quiz game'</a> for giving me an initial guide on how to structure code for a python quiz. 
 - The Grimes Teacher's YouTube video <a href="https://www.youtube.com/watch?v=arcFqEuV_XQ"> 'Python: Print ASCII Art'</a> for showing me how to do just that. 
 - The Geeks for Geeks article <a href="https://www.geeksforgeeks.org/print-colors-python-terminal/"> 'Print Colors To Python Terminal'</a> for showing me how to use Colorama. 
