@@ -2,7 +2,7 @@ import colorama
 from colorama import Fore, Style
 colorama.init(autoreset=True)
 
-quiz_data = [#Fixed bug (back slashes to shorten question strings for PEP8)
+quiz_data = [
     {"question": "This dish is a speciality in the region of Gunma, typically\
  consisting of pork\ntenderloin which is breaded and deep fried.",
      "answers": {"A": "Menchikatsu",
@@ -109,7 +109,7 @@ def start_quiz():
     global name
     name = input("Please type your name and hit the enter key:\n")
 
-    while not name.strip():#fixed bug
+    while not name.strip():
         print("Please enter your name to begin the quiz\n")
         name = input("Please type your name and hit the enter key:\n")
     else:
@@ -166,13 +166,14 @@ def final_score(score):
     """
     Displays final score at end of quiz
     """
-    
 
     if score <= 5:
-        print(f"Great effort {name}! Your final score is {score} out of {num_of_questions}")
+        print(f"Great effort {name}! Your final score is {score} out of\
+ {num_of_questions}")
         print("Take the quiz again to see if you can improve your score\n")
     elif score > 5:
-        print(f"Congratulations {name}! Your final score is {score} out of {num_of_questions}")#fixed bug 
+        print(f"Congratulations {name}! Your final score is {score} out of\
+ {num_of_questions}")
 
 
 def play_again():
