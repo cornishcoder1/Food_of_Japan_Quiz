@@ -69,9 +69,9 @@ quiz_data = [
 
 def count_keys(quiz_data):
     """
-    Counts number of questions in dictionary for the f string on line 10
-    (this allows more questions to be added to dictionary and the intro text
-    to automatically update with number of questions).
+    Counts number of questions in dictionary (this allows more questions to be
+    added to dictionary and the intro text to automatically update with number
+    of questions).
 
     This function is based on code taken from the article 'Count Number of
     Keys in Dictionary Python' from DelftStack.
@@ -168,7 +168,7 @@ def run_quiz(quiz_data):
 
 def final_score(score):
     """
-    Displays final score at end of quiz
+    Displays final score at end of quiz.
     """
 
     if score <= 5:
@@ -183,7 +183,7 @@ def final_score(score):
 def play_again():
     """
     Asks user if they want to play again. Returns to start of quiz, or ends
-    quiz depending on user input
+    quiz depending on user input.
     """
 
     restart_quiz = True
