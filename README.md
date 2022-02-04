@@ -142,9 +142,29 @@ The user is also asked if they would like to play again, by typing 'y' for yes o
 
 <img src= "assets/screenshots/play_again_end_quiz.png">
 
-## Invalid data handling
+# Invalid data handling
 Write code that handles empty or invalid input data.
 Implement exception/error handling to optimise the user experience
+
+## Name Input
+Users must enter a string of text in the name input before they can proceed. If the input is left blank, or contains just whitespace, then an error message is displayed and the input is requested again. 
+
+<img src = "assets/screenshots/enter_name_error_handling.png">
+
+## Start Quiz
+Users must type 'y' or 'n' to indicate if they are ready to start the quiz. If they enter any other character, then an error message is displayed and the input is requested again. 
+
+<img src = "assets/screenshots/start_quiz_error_handling.png">
+
+## Answer Input 
+Users must type 'a', 'b' or 'c' to select their chosen answer. If they enter any other character, then an error message is displayed and the question will be repeated. An invalid answer like this does not effect the users end score. 
+
+<img src="assets/screenshots/answer_input_error_handling.png">
+
+## Play Again 
+Users must type 'y' or 'n' to indicate whether or not they wish to play again. If they enter any other character, then an error message is displayed and the input is requested again.
+
+<img src="assets/screenshots/play_again_error_handling.png">
 
 
 
