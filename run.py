@@ -116,7 +116,6 @@ def start_quiz():
     while not name.strip():
         print("Please enter your name to begin the quiz\n")
         name = input("Please type your name and hit the enter key:\n")
-        break
     else:
         print(f"Welcome to Food of Japan {name}!\n")
         print("Take the quiz to test your knowledge of Japanese cuisine.\n")
