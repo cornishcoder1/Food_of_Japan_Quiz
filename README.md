@@ -24,7 +24,7 @@
 
 7. [Testing](#testing)
 
-8. [Bugs](#bugs) \
+8. [Bugs](#bugs)
 
 9. [Other Resources Used](#other-resources-used)
 
@@ -47,8 +47,6 @@ I used <a href="https://www.lucid.app">Lucid</a> to create a simple flowchart of
 I produced a basic wireframe with <a href="https://www.balsamiq.com">Balsamiq</a>, as I wanted to include some visual elements at the start of the quiz including a title and some food related images. The wireframe helped me visualise what this could look like when the user initiates the programme. I discovered ASCII images and fonts, which can be used in a command line application, and so implemented this to add some basic styling at the start of the quiz. This wireframe was created during the early planning stages and does not represent the final presentation. 
 
 <img src="assets/images/pp3_wireframe.png">
-
-------
 
 # User Experience 
 
