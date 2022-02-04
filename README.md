@@ -71,7 +71,7 @@ As a user I want:
 
 # Features 
 
-## Main page and welcome screen 
+## Main page and Welcome Screen 
 *Project Goal - Provide some visuals with the use of images and colour to contribute to a positive user experience.*
 
 As design and layout features in command line applications are restrictive, I decided to add a background image to the main page by manipulating the provided template's CSS. I also changed the color of the 'Run Program' button to better match the color scheme. Although not explicitly required for this project, I wanted to enhance the user experience with the addition of some color and visuals. The background image is bright and cheerful, and the Japanese cat salt and pepper shakers are in keeping with the Japanese food theme.
