@@ -131,6 +131,7 @@ def start_quiz():
 
         if commence_quiz.lower() == "y":
             print("Lets go\n")
+            break
         elif commence_quiz.lower() == "n":
             print("Type 'y' when you are ready to begin\n")
         else:
