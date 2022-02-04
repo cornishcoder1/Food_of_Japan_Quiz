@@ -27,11 +27,11 @@ Write a README.md file in English for the Python application that explains its p
 
 6. [Data Model](#data-model)
 
-7. [Other Resources Used](#other-resources-used)
+7. [Testing](#testing)
 
-8. [Testing](#testing)
+8. [Bugs](#bugs) \
 
-9. [Bugs](#bugs) 
+9. [Other Resources Used](#other-resources-used)
 
 10. [Deployment](#deployment)
 
@@ -176,18 +176,20 @@ I would like to expand the size of the quiz, perhaps by adding an option to sele
 
 I used a dictionary in this programme to store the question and answer data for the quiz. I have written the code in a way that means additional questions can be added to the dictionary in the future, without having to amend any other code. This has been achieved through the use of f-Strings in print statements, so that accurate data is always displayed for the user score and total number of questions, regardless of the total number of questions present in the dictionary. 
 
-
-# Other resources used
-
-<a href="http://ami.responsivedesign.is/#"> - Am I Responsive</a>
-
-<a href="https://balsamiq.com"> - Balsamiq</a>
-
 ------
 
 # Testing
-Pep8, given invalid inputs, tested in local/deployed terminals. 
-Write Python code that passes through a linter (eg PEP8) with no significant issues.
+
+## Manual Testing
+I have carried out the following manual tests throughout the development process: 
+- Given invalid input at each input stage to check invalid data is dealt with in the way I expected.
+- Checked f-Strings to ensure that output data is updated automatically and remains accurate, if questions are added to the dictionary. 
+- Tested in my local terminal and the deployed Heroku terminal. 
+- Submitted my code for peer review. 
+- Asked friends and family to play the quiz to check that it works on various browsers, and that the quiz functionality is understandable. 
+
+## Validator Testing
+
 Document the implementation of manual testing for code validation(using PEP Validators).
 
 ------
@@ -202,6 +204,14 @@ Document validation error-based fixes implemented and identify and explain any u
 ## Unfixed
 
 
+
+------
+
+# Other resources used
+
+<a href="http://ami.responsivedesign.is/#"> - Am I Responsive</a>
+
+<a href="https://balsamiq.com"> - Balsamiq</a>
 
 ------
 
