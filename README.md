@@ -190,20 +190,30 @@ I have carried out the following manual tests throughout the development process
 
 ## Validator Testing
 
-Document the implementation of manual testing for code validation(using PEP Validators).
+I ran my code through the <a href="http://pep8online.com">PEP8 linter</a>, no problems were detected. 
+
+<img href="assets/screenhots/pep8_validator_screenshot.png">
+
+## Accessibility Testing
+
+Lighthouse scored the site highly on Performance and Accessibility.
+
+<img href="assets/screenshots/lighthouse_validator_screenshot.png">
 
 ------
 
 # Bugs
 Document validation error-based fixes implemented and identify and explain any unsolved validation errors.
 
-
 ## Fixed
--
+
+- When I first ran the code through the PEP8 linter, it informed me that some of the code lines in the dictionary were too long. This was also causing some individual words to break in the middle and displaying incorrectly in the terminal. I fixed this by inserting a back slash at the line length limit point and putting all characters after the back slash on to a new line. I had to position the new line carefully so that the questions would still display in the terminal without additional whitespace.
+- As a result of peer review, it was pointed out to me that it was possible to still get away with not entering any data in the name input, by hitting space two or more times. To rectify this I used the .strip() method to remove any leading whitespace.  
+- During final tests I realised that if I were to add any more questions to the dictionary, the total number of questions in the final score print statements would not update. For example if I added an eleventh question to the dictionary, and the user got all questions right, then the output would display "Your final score is 11 out of 10". This was recified easily as I already had a variable to represent the number of questions in the dictionary, and so inserted this variable into an f_string in the relevant print statements. 
 
 ## Unfixed
 
-
+- No remaining bugs. 
 
 ------
 
