@@ -223,22 +223,34 @@ Document validation error-based fixes implemented and identify and explain any u
 
 <a href="https://balsamiq.com"> - Balsamiq</a>
 
+<a href="https://developer.chrome.com/docs/devtools/"> - Chrome Dev Tools</a>
+
+<a href="https://www.geeksforgeeks.org/print-colors-python-terminal/"> - Colorama (Python module)</a>
+
+<a href="https://patorjk.com/software/taag/#p=display&f=Crawford2&t=Food%20of%20Japan!"> - Patorjk.com (text to ASCII generator)
+
 ------
 
 # Deployment 
 
 Deployment was done at the start of the project to allow device testing throughout the development process. 
-Document the deployment procedure in a section in the README file.
 
+My <a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open deployed site">project</a> was deployed via <a href="https://heroku.com">Heroku</a> as follows:
 
-My <a href="https://cornishcoder1.github.io/The-Green-Lorry/" aria-label="Link to open deployed site">project</a> was deployed via GitHub Pages as follows:
-
-1. Go to https://github.com and login
-2. Navigate to the required repository (The-Green-Lorry)
-3. Click on the "Settings" button
-4. Click on "GitHub Pages"
-5. Under "Source", click the dropdown for "Branch" select "master" and then "Save"
-6. A message will then appear stating that the website is published at the deployed address, this may take a few seconds.  
+1. Remove un-used imports from run.py file
+2. In order for input methods to work properly in the deployed mock terminal, add a new line character at the end of the text, inside the input method. 
+3. If required, create list of requirements with the following command in the terminal:  pip3 freeze > requirements.txt
+4. In Heroku account, go to Dashboard and click ‘Create New App’. Give the app a unique name and select region (Europe).
+5. Click ‘Create App’.
+6. Got to Settings tap and set up Config Vars (not required if not using a creds.json file).
+7. Click ‘Add Buildpack’, select Python and click ‘Save Changes’.
+8. Then select ‘NodeJS’ and click save again. IMPORTANT - Buildpacks should be in order. Python on top of NodeJS.
+9. Click on ‘Deploy’ tab.
+10. Select ‘GitHub' as deployment method. 
+11. Search for repo name and connect.
+12. Click ‘Enable Automatic Deploys’.
+13. Ensure that ‘main’ branch is selected in Manual deploy section and click ‘Deploy Branch’.
+14. Once deployed, click ‘view’ to access deployed project.  
 
 ------
 
