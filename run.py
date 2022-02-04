@@ -72,6 +72,10 @@ def count_keys(quiz_data):
     Counts number of questions in dictionary for the f string on line 10
     (this allows more questions to be added to dictionary and the intro text
     to automatically update with number of questions).
+
+    This function is based on code taken from the article 'Count Number of
+    Keys in Dictionary Python' from DelftStack.
+    See credit section of README for more information.
     """
     count = 0
     for i in enumerate(quiz_data):

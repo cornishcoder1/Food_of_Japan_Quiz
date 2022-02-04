@@ -227,6 +227,8 @@ Document validation error-based fixes implemented and identify and explain any u
 
 <a href="https://www.geeksforgeeks.org/print-colors-python-terminal/"> - Colorama (Python module)</a>
 
+<a href="https://www.lucid.app"> - Lucid</a>
+
 <a href="https://patorjk.com/software/taag/#p=display&f=Crawford2&t=Food%20of%20Japan!"> - Patorjk.com (text to ASCII generator)
 
 ------
@@ -260,29 +262,35 @@ My <a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open 
 
 I used the following websites for research: 
 
-- <a href="https://www.bristolactivecity.org.uk/np-area-map/">Bristol Active City Area Map</a> 
-- <a href="https://shiply.com">Shiply.com</a>
+- The videos of YouTubers <a href="https://www.youtube.com/c/AbroadinJapan">Chris Broad</a> and <a href="https://www.youtube.com/c/IWillAlwaysTravelforFood">I Will Always Always Travel For Food</a>, for quiz question inspiration:  
+    - <a href="https://www.youtube.com/watch?v=3n_rgmagVoE"> What $250 Buys You at a Japanese Hot Spring Inn</a>
+    - <a href="https://www.youtube.com/watch?v=2j2TO_QSxUo"> 5 Must Try Dishes in Hokkaido</a>
+    - <a href="https://www.youtube.com/watch?v=IMSYyb5U-9g"> What $20 Buys You at a Japanese Street Food Market</a>
+    - <a href="https://www.youtube.com/watch?v=MWOwEWMquP8"> I Tried Kobe Beef for the First Time</a>
+    - <a href="https://www.youtube.com/watch?v=RsuuFrEPLrE">Japanese Street Food in TSUKIJI Market</a>
 
 <br>
 
 ## Media 
 
-1. Nightstand hero image by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> on <a href="https://www.flaticon.com/premium-icon/night-stand_997309?term=furniture&related_id=997360&origin=search"> Flaticon</a> 
+1. Background image from <a href="https://www.8wallpapers.com/5072.html">8wallpapers.com</a> 
 
-2. Delivery van image by <a href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener"> Freepik</a> on <a href="https://www.flaticon.com/premium-icon/delivery-van_3124236"> Flaticon</a>
-
-3. Articulated Lorry Favicon by <a href="https://twitter.com/johnsorrentino">John Sorrentino</a> on <a href="https://favicon.io/emoji-favicons/articulated-lorry/"> Favicon.io</a>
+2. Sushi ASCII by Daniel Au, from <a href="https://asciiart.website/">Ascii Art</a>
 
 <br>
 
 ## Acknowledgements 
 
-- Dave_Horrocks_5P for his invaluable hours of assistance in helping me understand arrays (a previous PP2 idea), switch statements and CSS animation/keyframes. 
-- Eventyret_mentor for spotting my file path bug and helping me fix it. 
-- John_McPherson_5P for helping me fix my original if/else statement bug. 
-- Jon_5P for his regular chats and positivity. 
-- Kera Cudmore_5p & Matthias Kiesel_5p for their Peer Review feedback. 
-- Love Maths project for reference and guidance.
-- Sebastian Immel (Mentor)
-- The book 'JavaScript for Kids' by Chris Minnick and Eva Holland. This is where the idea for the quote generator came from.
+- Declan_5P_Lead and Sean Young for helping me with my understanding of while loops.
+- Dave_Horrocks_5p_lead for his extensive peer review, and for drawing my attention to the name input bug. 
+- Johann from Tutor Support for helping me with my dictionary. 
+- Computer Science Tutorials' YouTube Video <a href="https://www.youtube.com/watch?v=LXSvzUimHBk"> 'Simple Quiz Plus Flowchart Python' for helping me get started with a flowchart.</a>
+- Bro Code's YouTube video <a href="https://www.youtube.com/watch?v=yriw5Zh406s"> 'Python Quiz game'</a> for giving me an initial guide on how to structure code for a python quiz. 
+- The Grimes Teacher's YouTube video <a href="https://www.youtube.com/watch?v=arcFqEuV_XQ"> 'Python: Print ASCII Art'</a> for showing me how to do just that. 
+- The Geeks for Geeks article <a href="https://www.geeksforgeeks.org/print-colors-python-terminal/"> 'Print Colors To Python Terminal'</a> for showing me how to use Colorama. 
+- The DelftStack article <a href="https://www.delftstack.com/howto/python/number-of-keys-in-dictionary-python/"> 'Count Number of Dictionary Keys Python'</a> for introducing the enumerate() function to me.
+- Love Running project for reference and guidance. 
+- Victor Miclovich (Mentor)
+- <a href="http://w3schools.com"> W3 Schools</a> for tips on media queries, date inputs on forms and centering tables. 
+
  
