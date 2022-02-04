@@ -1,8 +1,3 @@
-Use consistent and effective markdown formatting that is well-structured, easy to follow, and has few grammatical errors when writing a README file.
-
-Write a README.md file in English for the Python application that explains its purpose and the value that it provides to its users.
-
-
 # Food of Japan Quiz
 
 <p>My command line application built with Python is a quiz titled 'Food of Japan'. Users test their knowledge of Japanese cuisine by answering 10 food themed multiple choice questions, with their score being returned to them at the end of the quiz. They then have the option to play again, or end the quiz. </p>
@@ -56,7 +51,6 @@ I produced a basic wireframe with <a href="https://www.balsamiq.com">Balsamiq</a
 ------
 
 # User Experience 
-Present a clear rationale for the development of the project in the README, demonstrating that it has a clear, well-defined purpose addressing the critical goals of the application for a particular target audience (or multiple related audiences).
 
 ## Project Goals
 - Provide the user with a fun, engaging and easy to play multiple choice quiz.
@@ -78,8 +72,6 @@ As a user I want:
 ------
 
 # Features 
-Document the rationale as to why a particular library/libraries are necessary for the implementation of the project.
-Demonstrate, through screenshots, what the project outcomes are and how they have been met.
 
 ## Main page and welcome screen 
 *Project Goal - Provide some visuals with the use of images and colour to contribute to a positive user experience.*
@@ -139,8 +131,6 @@ The user is also asked if they would like to play again, by typing 'y' for yes o
 <img src= "assets/screenshots/play_again_end_quiz.png">
 
 # Invalid data handling
-Write code that handles empty or invalid input data.
-Implement exception/error handling to optimise the user experience
 
 ## Upper or lower case characters 
 All input will be accepted in lower or upper case. For example if the user selects answer 'a' with an uppercase 'A', this input will still be accepted by the programme as valid. 
@@ -203,7 +193,6 @@ Lighthouse scored the site highly on Performance and Accessibility.
 ------
 
 # Bugs
-Document validation error-based fixes implemented and identify and explain any unsolved validation errors.
 
 ## Fixed
 
@@ -289,8 +278,7 @@ I used the following websites for research:
 - The Grimes Teacher's YouTube video <a href="https://www.youtube.com/watch?v=arcFqEuV_XQ"> 'Python: Print ASCII Art'</a> for showing me how to do just that. 
 - The Geeks for Geeks article <a href="https://www.geeksforgeeks.org/print-colors-python-terminal/"> 'Print Colors To Python Terminal'</a> for showing me how to use Colorama. 
 - The DelftStack article <a href="https://www.delftstack.com/howto/python/number-of-keys-in-dictionary-python/"> 'Count Number of Dictionary Keys Python'</a> for introducing the enumerate() function to me.
-- Love Running project for reference and guidance. 
-- Victor Miclovich (Mentor)
-- <a href="http://w3schools.com"> W3 Schools</a> for tips on media queries, date inputs on forms and centering tables. 
+- Love Sandwiches project for reference and guidance. 
+- Sebastian Immel (Mentor)
 
  
