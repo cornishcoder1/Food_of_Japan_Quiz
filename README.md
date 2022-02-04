@@ -12,7 +12,7 @@
 
 1. [Flowchart](#flowchart)
 
-2. [Wireframes](#wireframes)
+2. [Wireframe](#wireframe)
 
 3. [User Experience/Stories](#user-experience)
 
