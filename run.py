@@ -63,12 +63,12 @@ quiz_data = [#Fixed bug (back slashes to shorten question strings for PEP8)
      "answers": {"A": "Zabuton Dora",
                  "B": "Taiyaki",
                  "C": "Mitarashi Dango"},
-     "correct_answer": "B"}
+     "correct_answer": "B"},
     {"question": "Who's Bob?",
      "answers": {"A": "uncle",
                  "B": "cousin",
                  "C": "brother"},
-     "correct_answer": "B"} 
+     "correct_answer": "B"}
 ]
 
 
