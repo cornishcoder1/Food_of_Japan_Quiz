@@ -124,7 +124,7 @@ Once all 10 questions have been iterated through, the user is then presented wit
 <br> 
 <img src="assets/screenshots/final_score_2.png">
 
-The user is also asked if they would like to play again, by typing 'y' for yes or 'n' for no. If 'y' is typed the program sequence starts again. If 'n' is typed, a message informs the user the the quiz has ended and to click the 'Run Program' button if they wish to reset the quiz. 
+The user is also asked if they would like to play again, by typing 'y' for yes or 'n' for no. If 'y' is typed the program sequence starts again. If 'n' is typed, a message informs the user that the quiz has ended and to click the 'Run Program' button if they wish to reset the quiz. 
 
 <img src= "assets/screenshots/play_again_end_quiz.png">
 
