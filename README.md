@@ -228,7 +228,7 @@ My <a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open 
 3. If required, create list of requirements with the following command in the terminal:  pip3 freeze > requirements.txt
 4. In Heroku account, go to Dashboard and click ‘Create New App’. Give the app a unique name and select region (Europe).
 5. Click ‘Create App’.
-6. Go to Settings tap and set up Config Vars (only required if using a creds.json file).
+6. Go to Settings tab and set up Config Vars (only required if using a creds.json file).
 7. Click ‘Add Buildpack’, select Python and click ‘Save Changes’.
 8. Then select ‘NodeJS’ and click save again. IMPORTANT - Buildpacks should be in order. Python on top of NodeJS.
 9. Click on ‘Deploy’ tab.
