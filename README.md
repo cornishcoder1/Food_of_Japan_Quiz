@@ -19,25 +19,23 @@ Write a README.md file in English for the Python application that explains its p
 
 2. [Wireframes](#wireframes)
 
-3. [How To Play](#how-to-play)
+3. [User Experience/Stories](#user-experience)
 
-4. [User Experience/Stories](#user-experience)
+4. [Features](#features)
 
-5. [Features](#features)
+5. [Invalid Data Handling](#invalid-data-handling)
 
-6. [Invalid Data Handling](#invalid-data-handling)
+6. [Data Model](#data-model)
 
-7. [Data Model](#data-model)
+7. [Other Resources Used](#other-resources-used)
 
-8. [Other Resources Used](#other-resources-used)
+8. [Testing](#testing)
 
-9. [Testing](#testing)
+9. [Bugs](#bugs) 
 
-10. [Bugs](#bugs) 
+10. [Deployment](#deployment)
 
-11. [Deployment](#deployment)
-
-12. [Credits](#credits)
+11. [Credits](#credits)
    
    
 ------
@@ -54,10 +52,6 @@ I used <a href="https://www.lucid.app">Lucid</a> to create a simple flowchart of
 I produced a basic wireframe with <a href="https://www.balsamiq.com">Balsamiq</a>, as I wanted to include some visual elements at the start of the quiz including a title and some food related images. The wireframe helped me visualise what this could look like when the user initiates the programme. I discovered ASCII images and fonts, which can be used in a command line application, and so implemented this to add some basic styling at the start of the quiz. This wireframe was created during the early planning stages and does not represent the final presentation. 
 
 <img src="assets/images/pp3_wireframe.png">
-
-------
-
-# How to Play
 
 ------
 
@@ -147,6 +141,9 @@ The user is also asked if they would like to play again, by typing 'y' for yes o
 # Invalid data handling
 Write code that handles empty or invalid input data.
 Implement exception/error handling to optimise the user experience
+
+## Upper or lower case characters 
+All input will be accepted in lower or upper case. For example if the user selects answer 'a' with an uppercase 'A', this input will still be accepted by the programme as valid. 
 
 ## Name Input
 Users must enter a string of text in the name input before they can proceed. If the input is left blank, or contains just whitespace, then an error message is displayed and the input is requested again. 
