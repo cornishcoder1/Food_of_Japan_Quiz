@@ -14,7 +14,7 @@
 
 2. [Wireframe](#wireframe)
 
-3. [User Experience/Stories](#user-experience)
+3. [User Experience](#user-experience)
 
 4. [Features](#features)
 
