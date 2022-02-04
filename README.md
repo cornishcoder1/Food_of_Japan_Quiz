@@ -25,17 +25,19 @@ Write a README.md file in English for the Python application that explains its p
 
 5. [Features](#features)
 
-6. [Data Model](#data-model)
+6. [Invalid Data Handling](#invalid-data-handling)
 
-7. [Other Resources Used](#other-resources-used)
+7. [Data Model](#data-model)
 
-8. [Testing](#testing)
+8. [Other Resources Used](#other-resources-used)
 
-9. [Bugs](#bugs) 
+9. [Testing](#testing)
 
-10. [Deployment](#deployment)
+10. [Bugs](#bugs) 
 
-11. [Credits](#credits)
+11. [Deployment](#deployment)
+
+12. [Credits](#credits)
    
    
 ------
