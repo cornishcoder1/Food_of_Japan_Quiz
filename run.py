@@ -64,11 +64,6 @@ quiz_data = [#Fixed bug (back slashes to shorten question strings for PEP8)
                  "B": "Taiyaki",
                  "C": "Mitarashi Dango"},
      "correct_answer": "B"},
-    {"question": "Who's Bob?",
-     "answers": {"A": "uncle",
-                 "B": "cousin",
-                 "C": "brother"},
-     "correct_answer": "B"}
 ]
 
 
@@ -174,10 +169,10 @@ def final_score(score):
     
 
     if score <= 5:
-        print(f"Great effort {name}! Your final score is {score} out of 10")
+        print(f"Great effort {name}! Your final score is {score} out of {num_of_questions}")
         print("Take the quiz again to see if you can improve your score\n")
     elif score > 5:
-        print(f"Congratulations {name}! Your final score is {score} out of {num_of_questions}")
+        print(f"Congratulations {name}! Your final score is {score} out of {num_of_questions}")#fixed bug 
 
 
 def play_again():
