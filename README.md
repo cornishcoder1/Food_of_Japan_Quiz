@@ -163,7 +163,7 @@ I would like to expand the size of the quiz, perhaps by adding an option to sele
 
 # Data Model
 
-I used a dictionary in this programme to store the question and answer data for the quiz. I have written the code in a way that means additional questions can be added to the dictionary in the future, without having to amend any other code. This has been achieved through the use of f-Strings in print statements, so that accurate data is always displayed for the user score and total number of questions, regardless of the total number of questions present in the dictionary. 
+I used a dictionary in this programme to store the question and answer data for the quiz. I have written the code in a way that means additional questions can be added to the dictionary in the future, without having to amend any other code. This has been achieved through the use of f-Strings in print statements, so that accurate data is always displayed for the user score and total number of questions in the dictionary. 
 
 
 # Testing
@@ -171,7 +171,7 @@ I used a dictionary in this programme to store the question and answer data for 
 ## Manual Testing
 I have carried out the following manual tests throughout the development process: 
 - Given invalid input at each input stage to check invalid data is dealt with in the way I expected.
-- Checked f-Strings to ensure that output data is updated automatically and remains accurate, if questions are added to the dictionary. 
+- Checked f-Strings to ensure that output data is updated automatically and remains accurate, particularly if questions are added to the dictionary. 
 - Tested in my local terminal and the deployed Heroku terminal. 
 - Submitted my code for peer review. 
 - Asked friends and family to play the quiz to check that it works on various browsers, and that the quiz functionality is understandable. 
@@ -180,13 +180,13 @@ I have carried out the following manual tests throughout the development process
 
 I ran my code through the <a href="http://pep8online.com">PEP8 linter</a>, no problems were detected. 
 
-<img href="assets/screenhots/pep8_validator_screenshot.png">
+<img src="assets/screenhots/pep8_validator_screenshot.png">
 
 ## Accessibility Testing
 
 Lighthouse scored the site highly on Performance and Accessibility.
 
-<img href="assets/screenshots/lighthouse_validator_screenshot.png">
+<img src="assets/screenshots/lighthouse_validator_screenshot.png">
 
 
 # Bugs
