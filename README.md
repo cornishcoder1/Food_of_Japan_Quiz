@@ -134,6 +134,8 @@ The user is also asked if they would like to play again, by typing 'y' for yes o
 ## Upper or lower case characters 
 All input will be accepted in lower or upper case. For example if the user selects answer 'a' with an uppercase 'A', this input will still be accepted by the programme as valid. 
 
+<img src="assets/screenshots/upper_case_input.png">
+
 ## Name Input
 Users must enter a string of text in the name input before they can proceed. If the input is left blank, or contains just whitespace, then an error message is displayed and the input is requested again. 
 
