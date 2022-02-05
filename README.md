@@ -37,14 +37,14 @@
 
 # Flowchart
  
-I used <a href="https://www.lucid.app">Lucid</a> to create a simple flowchart of the expected flow of logic through the programme from start to finish. This helped me to begin visualising the structure of the code, and what functions may be needed.   
+I used <a href="https://www.lucid.app">Lucid</a> to create a simple flowchart of the expected flow of logic through the programme from start to finish. This helped me to begin visualising the structure of the code and what functions may be needed.   
 
 <img src="assets/images/pp3_flowchart.png">
 
 
 # Wireframe
 
-I produced a basic wireframe with <a href="https://www.balsamiq.com">Balsamiq</a>, as I wanted to include some visual elements at the start of the quiz including a title and some food related images. The wireframe helped me visualise what this could look like when the user initiates the programme. I discovered ASCII images and fonts, which can be used in a command line application, and so implemented this to add some basic styling at the start of the quiz. This wireframe was created during the early planning stages and does not represent the final presentation. 
+I produced a basic wireframe with <a href="https://www.balsamiq.com">Balsamiq</a> as I wanted to include some visual elements at the start of the quiz including a title and some food related images. The wireframe helped me visualise what this could look like when the user initiates the programme. I discovered ASCII images and fonts, which can be used in a command line application, and so implemented this to add some basic styling at the start of the quiz. This wireframe was created during the early planning stages and does not represent the final presentation. 
 
 <img src="assets/images/pp3_wireframe.png">
 
@@ -90,7 +90,7 @@ Once the user has entered their name, they are given a personalised welcome mess
 
 <img src="assets/screenshots/instructions.png">
 
-The user is then asked if they are ready to play the quiz by typing 'y' for yes or 'n' for no. This allows user initiation and control of the logic flow in this stage of the program. If the user types 'y' the quiz will begin, if 'n' is typed then a message appears asking them to type 'y' when ready, and the question repeats.
+The user is then asked if they are ready to play the quiz by typing 'y' for yes or 'n' for no. This allows user initiation and control of the logic flow in this stage of the program. If the user types 'y' the quiz will begin and if 'n' is typed a message will appear asking them to type 'y' when ready, and the question repeats.
 
 <img src="assets/screenshots/start_quiz_not_ready.png">
 
@@ -142,17 +142,17 @@ Users must enter a string of text in the name input before they can proceed. If 
 <img src = "assets/screenshots/enter_name_error_handling.png">
 
 ## Start Quiz
-Users must type 'y' or 'n' to indicate if they are ready to start the quiz. If they enter any other character, then an error message is displayed and the input is requested again. 
+Users must type 'y' or 'n' to indicate if they are ready to start the quiz. If they enter any other character an error message is displayed and the input is requested again. 
 
 <img src = "assets/screenshots/start_quiz_error_handling.png">
 
 ## Answer Input 
-Users must type 'a', 'b' or 'c' to select their chosen answer. If they enter any other character, then an error message is displayed and the question will be repeated. An invalid answer like this does not effect the users end score. 
+Users must type 'a', 'b' or 'c' to select their chosen answer. If they enter any other character an error message is displayed and the question will be repeated. An invalid answer like this does not effect the users end score. 
 
 <img src="assets/screenshots/answer_input_error_handling.png">
 
 ## Play Again 
-Users must type 'y' or 'n' to indicate whether or not they wish to play again. If they enter any other character, then an error message is displayed and the input is requested again.
+Users must type 'y' or 'n' to indicate whether or not they wish to play again. If they enter any other character an error message is displayed and the input is requested again.
 
 <img src="assets/screenshots/play_again_error_handling.png">
 
@@ -174,7 +174,7 @@ I have carried out the following manual tests throughout the development process
 - Checked f-Strings to ensure that output data is updated automatically and remains accurate, particularly if questions are added to the dictionary. 
 - Tested in my local terminal and the deployed Heroku terminal. 
 - Submitted my code for peer review. 
-- Asked friends and family to play the quiz to check that it works on various browsers, and that the quiz functionality is understandable. 
+- Asked friends and family to play the quiz to check that it works on various browsers and that the quiz functionality is understandable. 
 
 ## Validator Testing
 
@@ -195,7 +195,7 @@ Lighthouse scored the site highly on Performance and Accessibility.
 
 - When I first ran the code through the PEP8 linter, it informed me that some of the code lines in the dictionary were too long. This was also causing some individual words to break in the middle and displaying incorrectly in the terminal. I fixed this by inserting a back slash at the line length limit point and putting all characters after the back slash onto a new line. I had to position the new line carefully so that the questions would still display in the terminal without additional whitespace. Broken words were fixed by using a new line character. 
 - As a result of peer review, it was pointed out to me that it was possible to still get away with not entering any data in the name input, by hitting space two or more times. To rectify this I used the .strip() method to remove any leading whitespace.  
-- During final tests I realised that if I were to add any more questions to the dictionary, the total number of questions in the final score print statements would not update. For example if I added an eleventh question to the dictionary, and the user got all questions right, then the output would display "Your final score is 11 out of 10". This was recified easily as I already had a variable to represent the number of questions in the dictionary, and so inserted this variable into an f-String in the relevant print statements. 
+- During final tests I realised that if I were to add any more questions to the dictionary, the total number of questions in the final score print statements would not update. For example if I added an eleventh question to the dictionary, and the user got all questions right, then the output would display "Your final score is 11 out of 10". This was recified easily as I already had a variable to represent the number of questions in the dictionary and so inserted this variable into an f-String in the relevant print statements. 
 
 ## Unfixed
 
