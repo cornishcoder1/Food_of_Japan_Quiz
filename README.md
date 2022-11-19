@@ -2,7 +2,7 @@
 
 <p>This project is a command line application built with Python. Users test their knowledge of Japanese cuisine by answering 10 food themed multiple choice questions. Their score is returned to them at the end of the quiz, and they are also given the option to play again if they wish.</p>
 
-<a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open deployed site">Link to deployed site</a>
+<a href="https://foodofjapan.onrender.com" aria-label="Link to open deployed site">Link to deployed site</a>
 
 <img src="assets/images/am_i_responsive_screenshot.png">
 
