@@ -30,7 +30,9 @@
 
 10. [Deployment](#deployment)
 
-11. [Credits](#credits)
+11. [Deployment Update Nov 2022](#deployment-update-nov-2022)
+
+12. [Credits](#credits)
    
    
 ------
@@ -237,6 +239,12 @@ My <a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open 
 12. Click ‘Enable Automatic Deploys’.
 13. Ensure that ‘main’ branch is selected in Manual deploy section and click ‘Deploy Branch’.
 14. Once deployed, click ‘view’ to access deployed project.  
+
+# Deployment (Update, Nov 2022)
+
+As of November 2022, Heroku ceased to provide a free service. Therefore, to continuing hosting this project without charge I transfered it to free service <a href="https://render.com/" target="_blank">Render</a>.
+
+The steps followed to migrate this project from Heroku to render can be found <a href="https://code-institute-students.github.io/deployment-docs/10-pp3/" target="_blank">here</a>.
 
 
 # Credits 
