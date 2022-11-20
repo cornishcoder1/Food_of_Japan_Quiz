@@ -223,7 +223,7 @@ Lighthouse scored the site highly on Performance and Accessibility.
 
 Deployment was done at the start of the project to allow device testing throughout the development process. 
 
-My <a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open deployed site">project</a> was deployed via <a href="https://heroku.com">Heroku</a> as follows:
+My project was deployed via <a href="https://heroku.com">Heroku</a> as follows:
 
 1. Remove un-used imports from run.py file.
 2. In order for input methods to work properly in the deployed mock terminal, add a new line character at the end of the text, inside the input method. 
@@ -242,7 +242,7 @@ My <a href="https://food-of-japan-quiz.herokuapp.com/" aria-label="Link to open 
 
 # Deployment (Update, Nov 2022)
 
-As of November 2022, Heroku ceased to provide a free service. Therefore, to continuing hosting this project without charge I transfered it to free service <a href="https://render.com/">Render</a>.
+As of November 2022, Heroku ceased to provide a free service. Therefore, to continuing hosting <a href="https://foodofjapan.onrender.com">this project</a> without charge I transfered it to free service <a href="https://render.com/">Render</a>.
 
 The steps followed to migrate this project from Heroku to render can be found <a href="https://code-institute-students.github.io/deployment-docs/10-pp3/">here</a>.
 
